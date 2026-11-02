@@ -1,0 +1,14 @@
+.DS_Store
+._*
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+node_modules/
+.venv/
+__pycache__/
+.cache/
+*.log
+.idea/
+.vscode/
