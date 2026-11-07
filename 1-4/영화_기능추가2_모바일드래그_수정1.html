@@ -184,6 +184,7 @@
       element.onclick = () => { if (selected) move(selected,tier); };
     }
     function render() {
+      endTouchDrag(false);
       const tiers = document.querySelector('#tiers'); tiers.replaceChildren();
       for (const tier of LEVELS.filter(value => value !== 'pool')) {
         const row = document.createElement('div'); row.className = 'row ' + tier;
