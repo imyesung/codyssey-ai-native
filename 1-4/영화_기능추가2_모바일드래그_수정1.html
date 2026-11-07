@@ -283,8 +283,12 @@
     }
     function autoScroll() {
       if (touchDrag?.step !== 'drag') return;
-      const y = touchDrag.y, bottom = window.innerHeight - EDGE;
-      const push = y < EDGE ? y - EDGE : y > bottom ? y - bottom : 0;
+      const viewportTop = window.visualViewport?.offsetTop ?? 0;
+      const viewportHeight = window.visualViewport?.height ?? window.innerHeight;
+      const top = viewportTop + EDGE;
+      const bottom = viewportTop + viewportHeight - EDGE;
+      const y = touchDrag.y;
+      const push = y < top ? y - top : y > bottom ? y - bottom : 0;
       if (push) { window.scrollBy(0,Math.max(-18,Math.min(18,Math.round(push / 3)))); markTouchZone(); }
       touchDrag.frame = requestAnimationFrame(autoScroll);
     }
