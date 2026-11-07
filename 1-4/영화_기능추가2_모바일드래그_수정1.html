@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>내 영화 티어리스트</title>
+  <style>
+    :root { --paper:#faf8f3; --ink:#242922; --muted:#5f685d; --line:#d9dad1; --green:#276453; --sage:#e3eee7; --peach:#f2e6dc; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:system-ui,-apple-system,sans-serif; line-height:1.6;  }
+    main { width:min(100% - 32px,860px); margin:32px auto 48px; }
+    header { display:flex; align-items:start; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    h1 { margin:0; font-size:clamp(26px,5vw,34px); line-height:1.25; letter-spacing:-.03em; }
+    .sub { margin:10px 0 0; color:var(--muted); max-width:46ch; }
+    .tools { display:flex; flex-wrap:wrap; gap:8px; width:100%; margin-top:20px; }
+    .tools input { min-width:0; flex:1 1 160px; border:1.5px solid var(--line); border-radius:12px; padding:11px 12px; font:inherit; }
+    button { font:inherit; cursor:pointer; }
+    .tools button { padding:10px 15px; border:1px solid var(--green); border-radius:12px; font-weight:700; background:var(--green); color:#fff; }
+    .tools .reset { color:var(--green); background:#fff; }
+    #message { min-height:26px; margin:14px 0; font-size:14px; color:var(--muted); }
+    .tiers { display:grid; gap:10px; }
+    .row { display:flex; min-height:90px; background:#fff; border:1.5px solid var(--line); border-radius:14px; overflow:hidden; }
+    .row.over { outline:3px solid var(--green); outline-offset:1px; }
+    .label { width:64px; flex-shrink:0; border:0; color:white; font-size:26px; font-weight:800; padding:12px 4px; }
+    .S .label { background:#a55239; } .A .label { background:#b4763e; } .B .label { background:#276453; } .C .label { background:#67725d; }
+    .drop { flex:1; min-width:0; display:flex; flex-wrap:wrap; align-content:flex-start; gap:9px; padding:12px; min-height:88px; }
+    .pool { margin-top:22px; }
+    .pool-head { margin:0 0 8px; border:0; padding:0; background:transparent; color:var(--muted); font-size:17px; font-weight:700; text-align:left; }
+    #pool { border:1.5px dashed var(--line); border-radius:14px; background:#fff; }
+    .card { width:98px; min-height:62px; padding:8px; border:1px solid transparent; border-radius:10px; font-size:14px; font-weight:650; line-height:1.35; overflow-wrap:anywhere; color:var(--ink); cursor:grab; }
+    .card[aria-pressed="true"] { outline:3px solid var(--green); outline-offset:2px; }
+    .count { display:block; font-size:14px; font-weight:600; }
+    .note { font-size:13px; color:var(--muted); margin-top:18px; }
+    :focus-visible { outline:3px solid #ba613a; outline-offset:3px; }
+    @media(max-width:420px) { .label { width:48px; } .card { width:90px; } .drop { padding:10px; gap:8px; } }
+    /* 완성 축하: 처음 영화 8편이 모두 등급 칸에 들어가면 잠깐 나타났다 사라짐 */
+    .party { position:fixed; inset:0; z-index:10; display:none; place-items:center; overflow:hidden; pointer-events:none; background:radial-gradient(circle closest-side,rgba(250,248,243,.95),rgba(250,248,243,.8) 55%,rgba(250,248,243,0)); }
+    .party.on { display:grid; animation:party-veil 3.2s ease both; }
+    .party-bits { position:absolute; inset:0; }
+    .party-bits i { position:absolute; top:-24px; left:var(--x); width:var(--w); height:var(--h); border-radius:2px; background:var(--c); }
+    .party.on .party-bits i { animation:party-fall var(--t) cubic-bezier(.3,.55,.5,1) var(--d) both; }
+    .party-pop { display:flex; flex-direction:column; align-items:center; gap:12px; }
+    .party.on .party-pop { animation:party-pop .65s cubic-bezier(.34,1.56,.64,1) both; }
+    .party-hop { display:block; width:min(240px,58vw); height:auto; overflow:visible; }
+    .party.on .party-hop { animation:party-hop .7s ease-in-out .65s 3; }
+    .party-text { margin:0; padding:9px 18px; border-radius:999px; background:var(--green); color:#fff; font-size:clamp(15px,4.4vw,19px); font-weight:800; line-height:1.35; text-align:center; box-shadow:0 8px 20px rgba(39,100,83,.22); }
+    .party.on .party-text { animation:party-pop .55s cubic-bezier(.34,1.56,.64,1) .2s both; }
+    .party-arm { transform-box:fill-box; transform-origin:100% 100%; }
+    .party-arm-r { transform-origin:0 100%; }
+    .party.on .party-arm-l { animation:party-wave-l .5s ease-in-out .5s 4 alternate; }
+    .party.on .party-arm-r { animation:party-wave-r .5s ease-in-out .5s 4 alternate; }
+    .party-kernel { opacity:0; transform-box:fill-box; transform-origin:center; }
+    .party.on .party-kernel { animation:party-kernel 1.1s ease-out var(--kd) 2; }
+    .party-spark { transform-box:fill-box; transform-origin:center; }
+    .party.on .party-spark { animation:party-spark 1s ease-in-out var(--sd) 3; }
+    .party-status { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0; }
+    @keyframes party-veil { 0% { opacity:0; } 8%, 84% { opacity:1; } 100% { opacity:0; } }
+    @keyframes party-pop { 0% { opacity:0; transform:translateY(36px) scale(.4); } 100% { opacity:1; transform:none; } }
+    @keyframes party-hop { 0%, 100% { transform:translateY(0); } 45% { transform:translateY(-12px); } }
+    @keyframes party-wave-l { to { transform:rotate(14deg); } }
+    @keyframes party-wave-r { to { transform:rotate(-14deg); } }
+    @keyframes party-kernel { 0% { opacity:0; transform:translate(0,14px) scale(.5); } 25% { opacity:1; } 100% { opacity:0; transform:translate(var(--kx),-52px) rotate(var(--kr)); } }
+    @keyframes party-spark { 0%, 100% { opacity:.3; transform:scale(.5); } 50% { opacity:1; transform:scale(1.1); } }
+    @keyframes party-fall { to { transform:translate3d(var(--drift),calc(100vh + 60px),0) rotate(var(--spin)); } }
+    @media (prefers-reduced-motion:reduce) { .party-bits { display:none; } .party.on .party-pop, .party.on .party-hop, .party.on .party-text, .party.on .party-arm-l, .party.on .party-arm-r, .party.on .party-kernel, .party.on .party-spark { animation:none; } }
+    /* 터치 화면 끌어 놓기: 카드를 0.2초쯤 누르고 있으면 들리고, 그대로 끌어 원하는 칸에 놓으면 옮겨짐 */
+    .card.touch-hold { -webkit-user-select:none; user-select:none; -webkit-touch-callout:none; }
+    .card.touch-lift { transform:scale(1.06); box-shadow:0 8px 18px rgba(36,41,34,.2); transition:transform .15s ease, box-shadow .15s ease; }
+    .card.touch-source { opacity:.35; }
+    .touch-ghost { position:fixed; left:0; top:0; z-index:30; margin:0; pointer-events:none; box-shadow:0 12px 28px rgba(36,41,34,.25); }
+    #pool.over { outline:3px solid var(--green); outline-offset:1px; }
+    @media (prefers-reduced-motion:reduce) { .card.touch-lift { transition:none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><div><h1>내 영화 티어리스트</h1><p class="sub">영화를 선택한 뒤 옮길 등급 글자를 눌러 주세요. 카드를 끌어서 놓아도 됩니다.</p></div></header>
+    <form class="tools" id="add-form">
+      <input id="title" aria-label="영화 제목" placeholder="영화 제목 추가" maxlength="80">
+      <button type="submit">추가</button>
+      <button type="button" class="reset" id="reset">처음으로</button>
+    </form>
+    <p id="message" role="status">영화를 선택해 S·A·B·C로 나누어 보세요.</p>
+    <section class="tiers" id="tiers" aria-label="영화 등급"></section>
+    <section class="pool" aria-label="아직 안 정한 영화">
+      <button class="pool-head" id="pool-label" type="button" aria-label="미분류로 옮기기">아직 안 정한 영화</button>
+      <div class="drop" id="pool" data-tier="pool"></div>
+    </section>
+    <p class="note">같은 브라우저에서 이 파일을 다시 열면 정리한 목록이 남습니다. 다른 사람에게 파일을 보내도 내 입력 내역까지 전달되지는 않습니다.</p>
+  </main>
+  <!-- 완성 축하: 직접 그린 팝콘 통 캐릭터 (외부 이미지 없음) -->
+  <div class="party" id="party" aria-hidden="true">
+    <div class="party-bits"></div>
+    <div class="party-pop">
+      <svg class="party-hop" width="200" height="230" viewBox="0 0 200 230">
+        <defs>
+          <clipPath id="party-body-clip"><path d="M44 108H156L142.5 199Q141.3 207 133 207H67Q58.7 207 57.5 199Z"/></clipPath>
+          <clipPath id="party-mouth-clip"><path d="M93 158Q100 169 107 158Z"/></clipPath>
+        </defs>
+        <g transform="translate(24 42)"><path class="party-spark" style="--sd:.3s" fill="#e2a33b" d="M0 -10C1.2 -3 3 -1.2 10 0C3 1.2 1.2 3 0 10C-1.2 3 -3 1.2 -10 0C-3 -1.2 -1.2 -3 0 -10Z"/></g>
+        <g transform="translate(178 36) scale(.8)"><path class="party-spark" style="--sd:.6s" fill="#276453" d="M0 -10C1.2 -3 3 -1.2 10 0C3 1.2 1.2 3 0 10C-1.2 3 -3 1.2 -10 0C-3 -1.2 -1.2 -3 0 -10Z"/></g>
+        <g transform="translate(16 166) scale(.7)"><path class="party-spark" style="--sd:.9s" fill="#b4763e" d="M0 -10C1.2 -3 3 -1.2 10 0C3 1.2 1.2 3 0 10C-1.2 3 -3 1.2 -10 0C-3 -1.2 -1.2 -3 0 -10Z"/></g>
+        <g transform="translate(186 174) scale(.75)"><path class="party-spark" style="--sd:.45s" fill="#e2a33b" d="M0 -10C1.2 -3 3 -1.2 10 0C3 1.2 1.2 3 0 10C-1.2 3 -3 1.2 -10 0C-3 -1.2 -1.2 -3 0 -10Z"/></g>
+        <g transform="translate(80 52)"><g class="party-kernel" style="--kx:-24px;--kr:-40deg;--kd:.55s"><g fill="#3b2b23" stroke="#3b2b23" stroke-width="5"><circle cx="-3.5" r="5"/><circle cx="3" cy="-2.5" r="5.5"/><circle cx="1" cy="4" r="4.5"/></g><g fill="#fff6e0"><circle cx="-3.5" r="5"/><circle cx="3" cy="-2.5" r="5.5"/><circle cx="1" cy="4" r="4.5"/></g></g></g>
+        <g transform="translate(104 40)"><g class="party-kernel" style="--kx:4px;--kr:25deg;--kd:.85s"><g fill="#3b2b23" stroke="#3b2b23" stroke-width="5"><circle cx="-3.5" r="5"/><circle cx="3" cy="-2.5" r="5.5"/><circle cx="1" cy="4" r="4.5"/></g><g fill="#fff6e0"><circle cx="-3.5" r="5"/><circle cx="3" cy="-2.5" r="5.5"/><circle cx="1" cy="4" r="4.5"/></g></g></g>
+        <g transform="translate(127 52)"><g class="party-kernel" style="--kx:26px;--kr:45deg;--kd:1.15s"><g fill="#3b2b23" stroke="#3b2b23" stroke-width="5"><circle cx="-3.5" r="5"/><circle cx="3" cy="-2.5" r="5.5"/><circle cx="1" cy="4" r="4.5"/></g><g fill="#fff6e0"><circle cx="-3.5" r="5"/><circle cx="3" cy="-2.5" r="5.5"/><circle cx="1" cy="4" r="4.5"/></g></g></g>
+        <g class="party-arm party-arm-l"><path d="M60 140Q32 132 26 92" fill="none" stroke="#3b2b23" stroke-width="7" stroke-linecap="round"/><circle cx="25" cy="88" r="8.5" fill="#fff8ec" stroke="#3b2b23" stroke-width="3.2"/></g>
+        <g class="party-arm party-arm-r"><path d="M140 140Q168 132 174 92" fill="none" stroke="#3b2b23" stroke-width="7" stroke-linecap="round"/><circle cx="175" cy="88" r="8.5" fill="#fff8ec" stroke="#3b2b23" stroke-width="3.2"/></g>
+        <ellipse cx="82" cy="210" rx="12" ry="6.5" fill="#3b2b23"/><ellipse cx="118" cy="210" rx="12" ry="6.5" fill="#3b2b23"/>
+        <g fill="#3b2b23" stroke="#3b2b23" stroke-width="7">
+          <circle cx="82" cy="54" r="12"/><circle cx="104" cy="47" r="14"/><circle cx="126" cy="55" r="12"/>
+          <circle cx="64" cy="74" r="16"/><circle cx="88" cy="67" r="17"/><circle cx="114" cy="65" r="17"/><circle cx="138" cy="74" r="16"/>
+          <circle cx="50" cy="92" r="14"/><circle cx="74" cy="92" r="15"/><circle cx="100" cy="88" r="16"/><circle cx="126" cy="92" r="15"/><circle cx="150" cy="92" r="14"/>
+        </g>
+        <g fill="#fff6e0" stroke="#e2b878" stroke-width="2">
+          <circle cx="82" cy="54" r="12"/><circle cx="104" cy="47" r="14"/><circle cx="126" cy="55" r="12"/>
+          <circle cx="64" cy="74" r="16"/><circle cx="88" cy="67" r="17"/><circle cx="114" cy="65" r="17"/><circle cx="138" cy="74" r="16"/>
+          <circle cx="50" cy="92" r="14"/><circle cx="74" cy="92" r="15"/><circle cx="100" cy="88" r="16"/><circle cx="126" cy="92" r="15"/><circle cx="150" cy="92" r="14"/>
+        </g>
+        <g fill="#f5d06a">
+          <ellipse cx="92" cy="60" rx="4.5" ry="2.6"/><ellipse cx="119" cy="57" rx="3.6" ry="2.2"/><ellipse cx="68" cy="70" rx="3.4" ry="2"/><ellipse cx="103" cy="82" rx="4" ry="2.4"/><ellipse cx="136" cy="70" rx="3.2" ry="2"/>
+        </g>
+        <path d="M44 108H156L142.5 199Q141.3 207 133 207H67Q58.7 207 57.5 199Z" fill="#fff8ec"/>
+        <g clip-path="url(#party-body-clip)" fill="#cf5f45">
+          <path d="M44 108H60L70.5 207H58.6Z"/><path d="M76 108H92L94.1 207H82.3Z"/><path d="M108 108H124L117.7 207H105.9Z"/><path d="M140 108H156L141.4 207H129.5Z"/>
+        </g>
+        <path d="M44 108H156L142.5 199Q141.3 207 133 207H67Q58.7 207 57.5 199Z" fill="none" stroke="#3b2b23" stroke-width="3.5" stroke-linejoin="round"/>
+        <rect x="38" y="98" width="124" height="14" rx="7" fill="#fff8ec" stroke="#3b2b23" stroke-width="3.5"/>
+        <ellipse cx="100" cy="153" rx="34" ry="26" fill="#fffaf2" stroke="#3b2b23" stroke-width="3"/>
+        <path d="M82 150Q88 141 94 150M106 150Q112 141 118 150" fill="none" stroke="#3b2b23" stroke-width="4.2" stroke-linecap="round"/>
+        <ellipse cx="77" cy="160" rx="6.5" ry="4" fill="#f4a08e"/><ellipse cx="123" cy="160" rx="6.5" ry="4" fill="#f4a08e"/>
+        <path d="M93 158Q100 169 107 158Z" fill="#8a3426"/>
+        <ellipse cx="100" cy="166" rx="5" ry="3.2" fill="#f28a7d" clip-path="url(#party-mouth-clip)"/>
+        <path d="M93 158Q100 169 107 158Z" fill="none" stroke="#3b2b23" stroke-width="2.4" stroke-linejoin="round"/>
+      </svg>
+      <p class="party-text">8편 모두 등급을 정했어요!</p>
+    </div>
+  </div>
+  <p class="party-status" id="party-status" role="status"></p>
+  <script>
+    const KEY = "codyssey-activity-04-v2";
+    const LEVELS = ['S', 'A', 'B', 'C', 'pool'];
+    const TITLES = ["기생충","인터스텔라","라라랜드","센과 치히로의 행방불명","어벤져스: 엔드게임","범죄도시","타이타닉","토이 스토리"];
+    const COLORS = ["#f2e6dc","#e3eee7","#ede7f6","#fcefd9","#e2ecf4","#f6e3e3"];
+    const initial = () => ({ nextId: TITLES.length + 1, items: TITLES.map((title,index) => ({ id: 'm' + (index + 1), title, tier: 'pool' })) });
+    let state = initial();
+    let selected = null;
+    try {
+      const stored = JSON.parse(localStorage.getItem(KEY) || 'null');
+      if (stored && Number.isSafeInteger(stored.nextId) && Array.isArray(stored.items)
+          && stored.items.every(item => typeof item.id === 'string' && typeof item.title === 'string' && LEVELS.includes(item.tier))) state = stored;
+    } catch {}
+    function showMessage(message) { document.querySelector('#message').textContent = message; }
+    function save() {
+      try { localStorage.setItem(KEY, JSON.stringify(state)); }
+      catch { showMessage('이 브라우저에서는 저장하지 못했어요. 현재 화면에서 확인한 내용과 다시 열어 확인한 내용을 구분해 주세요.'); }
+    }
+    function move(id,tier) {
+      const item = state.items.find(item => item.id === id);
+      if (!item || !LEVELS.includes(tier)) return;
+      const wasPlaced = allTitlesPlaced();
+      item.tier = tier; selected = null; save(); render();
+      showMessage((item.title || '영화') + '를 옮겼어요.');
+      if (!wasPlaced && allTitlesPlaced()) celebrate();
+    }
+    function card(item,index) {
+      const element = document.createElement('button');
+      element.type = 'button'; element.className = 'card'; element.draggable = true;
+      element.textContent = item.title || ' '; element.dataset.id = item.id;
+      element.style.backgroundColor = COLORS[index % COLORS.length];
+      element.setAttribute('aria-label',item.title || '영화 카드');
+      element.setAttribute('aria-pressed',String(selected === item.id));
+      element.addEventListener('click',event => {
+        event.stopPropagation(); selected = selected === item.id ? null : item.id; render();
+        showMessage(selected ? (item.title || '영화') + '를 선택했어요.' : '선택을 해제했어요.');
+      });
+      element.addEventListener('dragstart',event => { event.dataTransfer.setData('text/plain',item.id); });
+      return element;
+    }
+    function wireDrop(element,tier) {
+      element.addEventListener('dragover',event => { event.preventDefault(); element.closest('.row')?.classList.add('over'); });
+      element.addEventListener('dragleave',() => element.closest('.row')?.classList.remove('over'));
+      element.addEventListener('drop',event => { event.preventDefault(); move(event.dataTransfer.getData('text/plain'),tier); });
+      element.onclick = () => { if (selected) move(selected,tier); };
+    }
+    function render() {
+      const tiers = document.querySelector('#tiers'); tiers.replaceChildren();
+      for (const tier of LEVELS.filter(value => value !== 'pool')) {
+        const row = document.createElement('div'); row.className = 'row ' + tier;
+        const label = document.createElement('button'); label.type = 'button'; label.className = 'label';
+        label.textContent = tier; label.setAttribute('aria-label',tier + '등급으로 옮기기');
+        label.addEventListener('click',() => { if (selected) move(selected,tier); else showMessage('먼저 영화 카드를 선택해 주세요.'); });
+        
+        const drop = document.createElement('div'); drop.className = 'drop'; drop.dataset.tier = tier;
+        state.items.forEach((item,index) => { if (item.tier === tier) drop.append(card(item,index)); });
+        wireDrop(drop,tier); row.append(label,drop); tiers.append(row);
+      }
+      const pool = document.querySelector('#pool'); pool.replaceChildren();
+      state.items.forEach((item,index) => { if (item.tier === 'pool') pool.append(card(item,index)); });
+      
+    }
+    wireDrop(document.querySelector('#pool'),'pool');
+    document.querySelector('#pool-label').addEventListener('click',() => { if (selected) move(selected,'pool'); else showMessage('먼저 영화 카드를 선택해 주세요.'); });
+    document.querySelector('#add-form').addEventListener('submit',event => {
+      event.preventDefault(); const input = document.querySelector('#title'); const title = input.value.trim();
+      if (!title) { showMessage('영화 제목을 입력해 주세요.'); input.focus(); return; }
+      if (state.items.some(item => item.title === title)) { showMessage('이미 있는 영화 제목이에요. 다른 제목을 넣어 주세요.'); return; }
+      state.items.push({ id: 'm' + state.nextId++, title, tier: 'pool' });
+      save(); render(); input.value = ''; showMessage('영화를 추가했어요.'); input.focus();
+    });
+    document.querySelector('#reset').addEventListener('click',() => {
+      state = initial(); selected = null; document.querySelector('#title').value = ''; save(); render(); showMessage('처음 목록으로 돌아왔어요.');
+    });
+    // 완성 축하: 처음 영화 8편(TITLES)이 모두 등급 칸에 들어가는 순간에만 보여 줍니다.
+    const PARTY_MS = 3200;
+    const PARTY_COLORS = ['#a55239','#b4763e','#276453','#67725d','#e2a33b','#f2c3ad'];
+    let partyTimer = null;
+    function allTitlesPlaced() {
+      return TITLES.every(title => state.items.some(item => item.title === title && item.tier !== 'pool'));
+    }
+    function celebrate() {
+      const party = document.querySelector('#party');
+      const bits = party.querySelector('.party-bits');
+      const random = (min,max) => min + Math.random() * (max - min);
+      bits.replaceChildren();
+      for (let i = 0; i < 28; i++) {
+        const bit = document.createElement('i');
+        const size = random(7,12);
+        bit.style.setProperty('--x',random(0,100).toFixed(1) + '%');
+        bit.style.setProperty('--w',size.toFixed(1) + 'px');
+        bit.style.setProperty('--h',(size * random(1,1.7)).toFixed(1) + 'px');
+        bit.style.setProperty('--c',PARTY_COLORS[i % PARTY_COLORS.length]);
+        bit.style.setProperty('--d',random(0,.5).toFixed(2) + 's');
+        bit.style.setProperty('--t',random(1.9,2.6).toFixed(2) + 's');
+        bit.style.setProperty('--drift',random(-60,60).toFixed(0) + 'px');
+        bit.style.setProperty('--spin',random(-540,540).toFixed(0) + 'deg');
+        bits.append(bit);
+      }
+      clearTimeout(partyTimer);
+      party.classList.remove('on');
+      void party.offsetWidth;
+      party.classList.add('on');
+      document.querySelector('#party-status').textContent = '처음 영화 8편의 등급을 모두 정했어요. 축하해요!';
+      partyTimer = setTimeout(() => {
+        party.classList.remove('on'); bits.replaceChildren();
+        document.querySelector('#party-status').textContent = '';
+      }, PARTY_MS);
+    }
+    // 터치 화면 끌어 놓기
+    // 휴대폰 브라우저는 HTML 끌어 놓기(draggable)를 손가락으로 지원하지 않거나 브라우저마다 다르게 지원합니다.
+    // 그래서 터치일 때만 직접 처리합니다. 마우스 끌어 놓기와 '선택 후 등급 누르기'는 그대로 둡니다.
+    // 카드를 0.2초쯤 누르고 있으면 카드가 들리고(lift), 그대로 끌면(drag) 손가락을 따라오다가 놓은 칸으로 move()를 부릅니다.
+    // 바로 밀면 평소처럼 화면이 스크롤되고, 끌지 않고 손을 떼면 원래처럼 카드가 선택됩니다.
+    const HOLD_MS = 200, SLOP = 10, EDGE = 60;
+    let touchDrag = null;
+    function touchZoneAt(x,y) {
+      const zone = document.elementFromPoint(x,y)?.closest('#tiers .row, .pool');
+      if (!zone) return null;
+      const isPool = zone.classList.contains('pool');
+      return { tier: isPool ? 'pool' : zone.querySelector('.drop').dataset.tier, mark: isPool ? zone.querySelector('#pool') : zone };
+    }
+    function markTouchZone() {
+      const zone = touchZoneAt(touchDrag.x,touchDrag.y);
+      if (touchDrag.zone?.mark !== zone?.mark) { touchDrag.zone?.mark.classList.remove('over'); zone?.mark.classList.add('over'); }
+      touchDrag.zone = zone;
+    }
+    function placeGhost() {
+      touchDrag.ghost.style.transform = `translate(${touchDrag.x - touchDrag.dx}px,${touchDrag.y - touchDrag.dy}px) scale(1.06) rotate(-2deg)`;
+    }
+    function startTouchDrag() {
+      const card = touchDrag.card, box = card.getBoundingClientRect(), ghost = card.cloneNode(true);
+      const width = card.offsetWidth, height = card.offsetHeight;
+      ghost.removeAttribute('draggable'); ghost.removeAttribute('aria-pressed'); ghost.removeAttribute('data-id');
+      ghost.setAttribute('aria-hidden','true'); ghost.tabIndex = -1;
+      ghost.className = 'card touch-ghost'; ghost.style.width = width + 'px'; ghost.style.height = height + 'px';
+      touchDrag.dx = touchDrag.startX - (box.left + box.width / 2 - width / 2);
+      touchDrag.dy = touchDrag.startY - (box.top + box.height / 2 - height / 2);
+      touchDrag.ghost = ghost; touchDrag.step = 'drag';
+      card.classList.replace('touch-lift','touch-source');
+      document.body.append(ghost); placeGhost(); markTouchZone();
+      touchDrag.frame = requestAnimationFrame(autoScroll);
+    }
+    function autoScroll() {
+      if (touchDrag?.step !== 'drag') return;
+      const y = touchDrag.y, bottom = window.innerHeight - EDGE;
+      const push = y < EDGE ? y - EDGE : y > bottom ? y - bottom : 0;
+      if (push) { window.scrollBy(0,Math.max(-18,Math.min(18,Math.round(push / 3)))); markTouchZone(); }
+      touchDrag.frame = requestAnimationFrame(autoScroll);
+    }
+    function endTouchDrag(drop) {
+      const drag = touchDrag; touchDrag = null;
+      if (!drag) return;
+      clearTimeout(drag.timer); cancelAnimationFrame(drag.frame);
+      drag.card.classList.remove('touch-hold','touch-lift','touch-source'); drag.card.draggable = true;
+      drag.zone?.mark.classList.remove('over'); drag.ghost?.remove();
+      const item = state.items.find(item => item.id === drag.card.dataset.id);
+      if (drop && drag.step === 'drag' && drag.zone && item && item.tier !== drag.zone.tier) move(item.id,drag.zone.tier);
+    }
+    document.addEventListener('touchstart',event => {
+      if (touchDrag) { endTouchDrag(false); return; }   // 두 번째 손가락이 닿으면 취소
+      const card = event.target.closest?.('main .card');
+      if (!card || event.touches.length > 1) return;
+      const { identifier, clientX, clientY } = event.changedTouches[0];
+      touchDrag = { card, id:identifier, startX:clientX, startY:clientY, x:clientX, y:clientY, step:'press' };
+      card.draggable = false;   // 누르는 동안에는 브라우저 자체 끌기를 꺼서 겹치지 않게 함
+      card.classList.add('touch-hold');
+      touchDrag.timer = setTimeout(() => { touchDrag.step = 'lift'; card.classList.add('touch-lift'); }, HOLD_MS);
+    },{ passive:true });
+    document.addEventListener('touchmove',event => {
+      const touch = touchDrag && [...event.changedTouches].find(t => t.identifier === touchDrag.id);
+      if (!touch) return;
+      touchDrag.x = touch.clientX; touchDrag.y = touch.clientY;
+      const far = Math.hypot(touchDrag.x - touchDrag.startX,touchDrag.y - touchDrag.startY) > SLOP;
+      if (touchDrag.step === 'press') { if (far) endTouchDrag(false); return; }   // 바로 밀면 스크롤로 봄
+      if (event.cancelable) event.preventDefault();                               // 카드가 들린 뒤에는 스크롤 대신 끌기
+      if (touchDrag.step === 'lift') { if (far) startTouchDrag(); return; }
+      placeGhost(); markTouchZone();
+    },{ passive:false });
+    document.addEventListener('touchend',event => {
+      const touch = touchDrag && [...event.changedTouches].find(t => t.identifier === touchDrag.id);
+      if (!touch) return;
+      touchDrag.x = touch.clientX;
+      touchDrag.y = touch.clientY;
+      if (touchDrag.step === 'drag') {
+        if (event.cancelable) event.preventDefault();   // 놓은 뒤 클릭(선택)이 덧붙지 않게
+        markTouchZone();
+      }
+      endTouchDrag(true);
+    },{ passive:false });
+    document.addEventListener('touchcancel',() => endTouchDrag(false));
+    document.addEventListener('dragstart',event => { if (touchDrag) event.preventDefault(); },true);
+    document.addEventListener('contextmenu',event => { if (touchDrag) event.preventDefault(); });
+    render();
+  </script>
+</body>
+</html>
