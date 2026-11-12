@@ -1,0 +1,276 @@
+{
+  "checkedAt": "2026-11-12T08:27:25.643Z",
+  "browser": "157.0.8103.51",
+  "target": "미션AI활용법_최종.html",
+  "phase": "v4",
+  "tests": [
+    {
+      "name": "방향키 4회 왕복과 전환 중 연속 입력",
+      "status": "PASS",
+      "evidence": {
+        "forward": [
+          {
+            "route": "1",
+            "tab": "영화 추가",
+            "y": 0
+          },
+          {
+            "route": "2",
+            "tab": "초기화",
+            "y": 0
+          },
+          {
+            "route": "3",
+            "tab": "2배 확대",
+            "y": 0
+          },
+          {
+            "route": "4",
+            "tab": "2배 확대",
+            "y": 1124
+          }
+        ],
+        "back": [
+          {
+            "route": "3",
+            "tab": "2배 확대",
+            "y": 0
+          },
+          {
+            "route": "2",
+            "tab": "초기화",
+            "y": 0
+          },
+          {
+            "route": "1",
+            "tab": "영화 추가",
+            "y": 0
+          },
+          {
+            "route": "0",
+            "tab": "저장 위치",
+            "y": 0
+          }
+        ],
+        "rapid": {
+          "route": "4",
+          "tab": "2배 확대",
+          "y": 1124
+        }
+      }
+    },
+    {
+      "name": "페이지 전환의 중간 위치와 움직임 줄이기",
+      "status": "PASS",
+      "evidence": {
+        "middle": {
+          "route": "4",
+          "tab": "2배 확대",
+          "y": 579
+        },
+        "end": {
+          "route": "4",
+          "tab": "2배 확대",
+          "y": 1130
+        },
+        "reduced": {
+          "route": "4",
+          "tab": "2배 확대",
+          "y": 1124
+        },
+        "stationaryFrame": "0"
+      }
+    },
+    {
+      "name": "여섯 요청문 보존과 실제 클립보드",
+      "status": "PASS",
+      "evidence": {
+        "copies": [
+          205,
+          183,
+          235,
+          226,
+          383,
+          196
+        ],
+        "total": 1543
+      }
+    },
+    {
+      "name": "복사 거부 시 원문 선택과 Esc 복귀",
+      "status": "PASS",
+      "evidence": {
+        "selected": 205,
+        "simulated": "clipboard.writeText rejection"
+      }
+    },
+    {
+      "name": "offline 파일과 다섯 화면 크기의 도식",
+      "status": "PASS",
+      "evidence": {
+        "network": "offline",
+        "sizes": [
+          {
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "images": 7,
+            "geometry": {
+              "x": 449.046875,
+              "y": 13.5,
+              "width": 729.09375,
+              "height": 836.984375,
+              "right": 1178.140625,
+              "bottom": 850.484375,
+              "railBottom": 0,
+              "scroll": 0
+            }
+          },
+          {
+            "width": 1280,
+            "height": 720,
+            "documentWidth": 1280,
+            "images": 7,
+            "geometry": {
+              "x": 437.046875,
+              "y": 14.140625,
+              "width": 572.296875,
+              "height": 656.984375,
+              "right": 1009.34375,
+              "bottom": 671.125,
+              "railBottom": 0,
+              "scroll": 0
+            }
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "documentWidth": 390,
+            "images": 7,
+            "geometry": {
+              "x": 19.5,
+              "y": 57.5625,
+              "width": 351,
+              "height": 402.9375,
+              "right": 370.5,
+              "bottom": 460.5,
+              "railBottom": 48.890625,
+              "scroll": 0
+            }
+          },
+          {
+            "width": 844,
+            "height": 390,
+            "documentWidth": 844,
+            "images": 7,
+            "geometry": {
+              "x": 357.078125,
+              "y": 14.296875,
+              "width": 284.828125,
+              "height": 326.96875,
+              "right": 641.90625,
+              "bottom": 341.265625,
+              "railBottom": 0,
+              "scroll": 0
+            }
+          },
+          {
+            "width": 720,
+            "height": 450,
+            "documentWidth": 720,
+            "images": 7,
+            "geometry": {
+              "x": 210.609375,
+              "y": 58.328125,
+              "width": 298.765625,
+              "height": 342.96875,
+              "right": 509.375,
+              "bottom": 401.296875,
+              "railBottom": 48.890625,
+              "scroll": 0
+            }
+          }
+        ],
+        "smallestViewport": "720x450 is a layout stress test, not a physical 200% zoom test"
+      }
+    },
+    {
+      "name": "일곱 레퍼런스의 정방향과 역방향 방문",
+      "status": "PASS",
+      "evidence": {
+        "visits": [
+          "ref-openai",
+          "ref-thariq",
+          "ref-simon",
+          "ref-maggie",
+          "ref-robin",
+          "ref-frank",
+          "ref-mike"
+        ],
+        "reverse": [
+          "ref-frank",
+          "ref-robin",
+          "ref-maggie",
+          "ref-simon",
+          "ref-thariq",
+          "ref-openai"
+        ]
+      }
+    },
+    {
+      "name": "읽기 전환의 위치 보존과 Q&A 복귀",
+      "status": "PASS",
+      "evidence": {
+        "before": 3661,
+        "after": 3661,
+        "frame": "0",
+        "qAndAReturn": true
+      }
+    },
+    {
+      "name": "인쇄의 네 사례와 여섯 요청문",
+      "status": "PASS",
+      "evidence": {
+        "stills": [
+          {
+            "width": 605.546875,
+            "height": 610.203125
+          },
+          {
+            "width": 605.5625,
+            "height": 610.21875
+          },
+          {
+            "width": 605.546875,
+            "height": 549.640625
+          },
+          {
+            "width": 605.5625,
+            "height": 549.65625
+          },
+          {
+            "width": 605.546875,
+            "height": 549.640625
+          },
+          {
+            "width": 605.5625,
+            "height": 549.65625
+          },
+          {
+            "width": 605.546875,
+            "height": 680.0625
+          },
+          {
+            "width": 605.5625,
+            "height": 680.078125
+          }
+        ],
+        "prompts": 6,
+        "referenceImages": 7,
+        "pdf": "final-print.pdf"
+      }
+    }
+  ],
+  "errors": [],
+  "sha256": "1d1e6a4579e4dc189f7c994a43712711df6851034899c5384202c6dc306676b2"
+}

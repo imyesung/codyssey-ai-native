@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-11-12T08:21:23.839Z",
+  "browser": "157.0.8103.51",
+  "results": [
+    {
+      "name": "2-2",
+      "network": "offline",
+      "cases": [
+        {
+          "tab": "저장 위치",
+          "frames": [
+            0,
+            0
+          ],
+          "codeCharacters": 1129
+        },
+        {
+          "tab": "영화 추가",
+          "frames": [
+            0,
+            0
+          ],
+          "codeCharacters": 1074
+        },
+        {
+          "tab": "초기화",
+          "frames": [
+            0,
+            0
+          ],
+          "codeCharacters": 1121
+        },
+        {
+          "tab": "2배 확대",
+          "frames": [
+            0,
+            0
+          ],
+          "codeCharacters": 945
+        }
+      ],
+      "images": 7,
+      "prompts": 6,
+      "narrowWidth": 390,
+      "errors": []
+    },
+    {
+      "name": "2-3",
+      "network": "offline",
+      "cases": [
+        {
+          "tab": "저장 위치",
+          "frames": [
+            0,
+            0
+          ],
+          "codeCharacters": 1129
+        },
+        {
+          "tab": "영화 추가",
+          "frames": [
+            0,
+            0
+          ],
+          "codeCharacters": 1074
+        },
+        {
+          "tab": "초기화",
+          "frames": [
+            0,
+            0
+          ],
+          "codeCharacters": 1121
+        },
+        {
+          "tab": "2배 확대",
+          "frames": [
+            0,
+            0
+          ],
+          "codeCharacters": 945
+        }
+      ],
+      "images": 7,
+      "prompts": 6,
+      "narrowWidth": 390,
+      "errors": []
+    }
+  ],
+  "target": "2-2 발표본 및 2-3 최종본"
+}
