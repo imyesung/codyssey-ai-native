@@ -1,0 +1,552 @@
+{
+  "date": "2026-11-13",
+  "observer": "Codex",
+  "browser": "157.0.8103.51",
+  "delivery": "Unmodified HTML copies served from localhost",
+  "candidateSha256": {
+    "claude": "0c456b42c1babbb27cfb0d18d1d0163fb2b0f19520efc3ce3e32a4611b5bcead",
+    "astra": "3890ab1f1a681f8c9e8864c48c176658333bdf3fc7b77dd88637e8121d3194d4"
+  },
+  "safari": {
+    "version": "26.5.2 (21624.2.5.11.8)",
+    "method": "Safari native UI, original local files via file URL",
+    "observationDate": "2026-11-13",
+    "observations": {
+      "claude": [
+        "Initial S/A replay displayed; status reported 73/73 frames",
+        "Movie-add tab selected; code and captions changed; status later reported 68/68 frames",
+        "Request collection navigation reached #prompts"
+      ],
+      "astra": [
+        "Movie-add tab selected; before/after captions and code changed",
+        "Request collection navigation reached #collection"
+      ]
+    }
+  },
+  "measurementNotes": [
+    "Initial mobile/individual-tab probes could sample during loading; use refined mobile captures and settledTabs for completed loading.",
+    "First clipboard observation was a button status check; refined copy.exact compares the browser clipboard with the displayed original after granting clipboard permissions to the isolated localhost test origin.",
+    "Offline test aborts external requests while localhost continues serving unchanged HTML bytes.",
+    "390x844 is a browser viewport, measured on the Mac."
+  ],
+  "candidates": [
+    {
+      "name": "claude",
+      "desktop": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "documentWidth": 1440,
+        "canvas": [
+          {
+            "width": 390,
+            "height": 960,
+            "displayWidth": 278.28125,
+            "displayHeight": 685,
+            "sampledOpaquePixels": 3744,
+            "error": null
+          },
+          {
+            "width": 390,
+            "height": 960,
+            "displayWidth": 278.28125,
+            "displayHeight": 685,
+            "sampledOpaquePixels": 3744,
+            "error": null
+          }
+        ]
+      },
+      "tabs": [
+        {
+          "tab": "놓은 칸과 저장된 칸",
+          "selected": "놓은 칸과 저장된 칸",
+          "before": [
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "after": [
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "stable": true,
+          "codeHeadings": [
+            "수정 전후 코드: 놓은 칸과 저장된 칸",
+            "1단계. 손을 뗐을 때 저장되는 등급 (커밋 28030c3, 종료 좌표로 드롭 대상 판정)",
+            "2단계. 손을 떼기 전에 보이는 테두리 (커밋 2a80415, 화면이 움직일 때 테두리 갱신)",
+            "요청 1. 수정 전후 GIF",
+            "작성자의 녹화와 코드"
+          ]
+        },
+        {
+          "tab": "영화 추가",
+          "selected": "영화 추가",
+          "before": [
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "after": [
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "stable": true,
+          "codeHeadings": [
+            "수정 전후 코드: 영화 추가 뒤에 남은 카드",
+            "요청 1. 수정 전후 GIF",
+            "작성자의 녹화와 코드"
+          ]
+        },
+        {
+          "tab": "초기화",
+          "selected": "초기화",
+          "before": [
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "after": [
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "stable": true,
+          "codeHeadings": [
+            "수정 전후 코드: 초기화 뒤에 남은 카드",
+            "요청 1. 수정 전후 GIF",
+            "작성자의 녹화와 코드"
+          ]
+        },
+        {
+          "tab": "2배 확대",
+          "selected": "2배 확대",
+          "before": [
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "after": [
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": null,
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "stable": true,
+          "codeHeadings": [
+            "수정 전후 코드: 두 배 확대에서 자동 스크롤",
+            "요청 1. 수정 전후 GIF",
+            "작성자의 녹화와 코드"
+          ]
+        }
+      ],
+      "requestNavigation": {
+        "url": "http://127.0.0.1:8766/claude.html#prompts",
+        "firstCopyButton": true,
+        "buttonName": "요청 1 복사"
+      },
+      "clipboard": {
+        "expectedLength": 205,
+        "actualLength": 205,
+        "exact": true,
+        "feedback": "복사했다."
+      },
+      "mobile": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "canvas": [
+          {
+            "width": 390,
+            "height": 960,
+            "displayWidth": 173,
+            "alpha": 255
+          },
+          {
+            "width": 390,
+            "height": 960,
+            "displayWidth": 173,
+            "alpha": 255
+          }
+        ],
+        "requestNavigation": {
+          "url": "http://127.0.0.1:8766/claude.html#prompts",
+          "firstCopyButton": true,
+          "documentWidth": 390
+        }
+      },
+      "externalNetworkBlocked": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "canvas": [
+          {
+            "width": 390,
+            "height": 960,
+            "displayWidth": 173,
+            "displayHeight": 425.84375,
+            "sampledOpaquePixels": 0,
+            "error": null
+          },
+          {
+            "width": 390,
+            "height": 960,
+            "displayWidth": 173,
+            "displayHeight": 425.84375,
+            "sampledOpaquePixels": 0,
+            "error": null
+          }
+        ],
+        "status": [
+          "수정 전 녹화를 불러오지 못했다.네트워크 오류나 차단으로 주소에 닿지 못했다.이 녹화의 결과: 손가락 아래로 A칸이 들어와도 초록 테두리는 S에 남는다. 손을 떼면 〈기생충〉은 S에 저장된다.오류1_드롭종료좌표.gif다시 불러오기",
+          "수정 후 녹화를 불러오지 못했다.네트워크 오류나 차단으로 주소에 닿지 못했다.이 녹화의 결과: 손가락 아래로 A칸이 들어오면 초록 테두리도 A로 옮겨 간다. 손을 떼면 〈기생충〉은 A에 저장된다.수정1_드롭종료좌표.gif다시 불러오기",
+          "수정 전 녹화(오류1_드롭종료좌표.gif)를 불러오지 못했다. 네트워크 오류나 차단으로 주소에 닿지 못했다. 수정 후 녹화(수정1_드롭종료좌표.gif)를 불러오지 못했다. 네트워크 오류나 차단으로 주소에 닿지 못했다. 아래 캡션에서 두 녹화의 결과를 글로 읽을 수 있다."
+        ]
+      },
+      "pageErrors": []
+    },
+    {
+      "name": "astra",
+      "desktop": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "documentWidth": 1440,
+        "canvas": [
+          {
+            "width": 390,
+            "height": 960,
+            "displayWidth": 296.5625,
+            "displayHeight": 730,
+            "sampledOpaquePixels": 3744,
+            "error": null
+          },
+          {
+            "width": 390,
+            "height": 960,
+            "displayWidth": 296.5625,
+            "displayHeight": 730,
+            "sampledOpaquePixels": 3744,
+            "error": null
+          }
+        ]
+      },
+      "tabs": [
+        {
+          "tab": "놓은 칸과 저장된 칸",
+          "selected": "놓은 칸과 저장된 칸",
+          "before": [
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "after": [
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "stable": true,
+          "codeHeadings": [
+            "요청 1. 수정 전후 GIF",
+            "선택한 장면에서 바뀐 코드",
+            "1단계. 손을 뗐을 때 저장되는 등급",
+            "수정 전",
+            "수정 후",
+            "2단계. 손을 떼기 전에 보이는 테두리",
+            "수정 전",
+            "수정 후"
+          ]
+        },
+        {
+          "tab": "영화 추가",
+          "selected": "영화 추가",
+          "before": [
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "after": [
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "stable": true,
+          "codeHeadings": [
+            "요청 1. 수정 전후 GIF",
+            "선택한 장면에서 바뀐 코드",
+            "수정 전",
+            "수정 후",
+            "요청 1. 수정 전후 GIF"
+          ]
+        },
+        {
+          "tab": "초기화",
+          "selected": "초기화",
+          "before": [
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "after": [
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "stable": true,
+          "codeHeadings": [
+            "요청 1. 수정 전후 GIF",
+            "선택한 장면에서 바뀐 코드",
+            "수정 전",
+            "수정 후",
+            "요청 1. 수정 전후 GIF"
+          ]
+        },
+        {
+          "tab": "2배 확대",
+          "selected": "2배 확대",
+          "before": [
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "after": [
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            },
+            {
+              "frame": "0",
+              "alpha": 255,
+              "width": 390,
+              "height": 960
+            }
+          ],
+          "stable": true,
+          "codeHeadings": [
+            "요청 1. 수정 전후 GIF",
+            "선택한 장면에서 바뀐 코드",
+            "수정 전",
+            "수정 후",
+            "요청 1. 수정 전후 GIF"
+          ]
+        }
+      ],
+      "requestNavigation": {
+        "url": "http://127.0.0.1:8766/astra.html#collection",
+        "firstCopyButton": true,
+        "buttonName": "이 문구 복사"
+      },
+      "clipboard": {
+        "expectedLength": 205,
+        "actualLength": 205,
+        "exact": true,
+        "feedback": "선택한 문구를 복사했다."
+      },
+      "mobile": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "canvas": [
+          {
+            "width": 390,
+            "height": 960,
+            "displayWidth": 169.5,
+            "alpha": 255
+          },
+          {
+            "width": 390,
+            "height": 960,
+            "displayWidth": 169.5,
+            "alpha": 255
+          }
+        ],
+        "requestNavigation": {
+          "url": "http://127.0.0.1:8766/astra.html#collection",
+          "firstCopyButton": true,
+          "documentWidth": 390
+        }
+      },
+      "externalNetworkBlocked": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "canvas": [
+          {
+            "width": 390,
+            "height": 960,
+            "displayWidth": 1,
+            "displayHeight": 1,
+            "sampledOpaquePixels": 0,
+            "error": null
+          },
+          {
+            "width": 390,
+            "height": 960,
+            "displayWidth": 1,
+            "displayHeight": 1,
+            "sampledOpaquePixels": 0,
+            "error": null
+          }
+        ],
+        "status": [
+          "수정 전 녹화를 불러오지 못했다. 아래에 장면의 결과를 적었다.",
+          "수정 후 녹화를 불러오지 못했다. 아래에 장면의 결과를 적었다."
+        ]
+      },
+      "pageErrors": []
+    }
+  ],
+  "screenshots": {
+    "Astra_첫화면.png": "853b9f69485db3b6de4c4b02fd34fccf3da0ac3366909ec21cb394d4dd671e58",
+    "Claude_390px.png": "b9eea92cc49a6cb5ca341c073be5f8cb5fca91816067a915957a512c72d9d7f5",
+    "Astra_390px.png": "44225a8a5ed6ebfa9e88daf7e3341d758678675a91f060bd0938e8d8cde2c1ae",
+    "Claude_첫화면.png": "05229dfe2e1426f2118e4ec4db7b963dc8c926b568abd3cdd571637bd5f97ca6"
+  }
+}
