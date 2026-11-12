@@ -1,0 +1,848 @@
+{
+  "capturedAt": "2026-11-12T23:18:50.749Z",
+  "timezone": "Asia/Seoul",
+  "viewport": {
+    "width": 1000,
+    "height": 760
+  },
+  "mode": "실제 Chrome, file://, 자동 조작",
+  "sources": {
+    "v1": {
+      "git": "d5826d0:2-2/missionthon-ai-tips-yesunglim.html",
+      "sha256": "b7cd16cf2508c8343b3e8f6121bc81522ea08ddd65f61c8f88f6309093f3998f",
+      "bytes": 9112086
+    },
+    "v2": {
+      "git": "437772d:2-3/미션AI활용법_최종.html",
+      "sha256": "fc8efef54564d170759e672060c9084179af3a71ab555b49797cacb5c143a107",
+      "bytes": 9113760
+    },
+    "v3": {
+      "git": "7d03fc4:2-3/미션AI활용법_최종.html",
+      "sha256": "4cf547ebfd6ab16abbef54d1ce6244dd20852a7e9237eb51c98dc6379e83542e",
+      "bytes": 9117487
+    },
+    "v4": {
+      "git": "f64367c:2-3/미션AI활용법_최종.html",
+      "sha256": "1d1e6a4579e4dc189f7c994a43712711df6851034899c5384202c6dc306676b2",
+      "bytes": 9920252
+    }
+  },
+  "checks": [
+    {
+      "name": "페이지 전환",
+      "version": "v1",
+      "initial": {
+        "y": 0,
+        "route": "3",
+        "selected": "2배 확대",
+        "frame": "13",
+        "reading": false
+      },
+      "end": {
+        "y": 914,
+        "route": "4",
+        "selected": "2배 확대",
+        "frame": "20",
+        "reading": false
+      },
+      "samples": [
+        {
+          "ms": 0,
+          "y": 0
+        },
+        {
+          "ms": 9,
+          "y": 914
+        },
+        {
+          "ms": 26,
+          "y": 914
+        },
+        {
+          "ms": 42,
+          "y": 914
+        },
+        {
+          "ms": 59,
+          "y": 914
+        },
+        {
+          "ms": 75,
+          "y": 914
+        },
+        {
+          "ms": 92,
+          "y": 914
+        },
+        {
+          "ms": 109,
+          "y": 914
+        },
+        {
+          "ms": 126,
+          "y": 914
+        },
+        {
+          "ms": 142,
+          "y": 914
+        },
+        {
+          "ms": 159,
+          "y": 914
+        },
+        {
+          "ms": 175,
+          "y": 914
+        },
+        {
+          "ms": 192,
+          "y": 914
+        },
+        {
+          "ms": 208,
+          "y": 914
+        },
+        {
+          "ms": 226,
+          "y": 914
+        },
+        {
+          "ms": 242,
+          "y": 914
+        },
+        {
+          "ms": 258,
+          "y": 914
+        },
+        {
+          "ms": 275,
+          "y": 914
+        },
+        {
+          "ms": 292,
+          "y": 914
+        },
+        {
+          "ms": 308,
+          "y": 914
+        },
+        {
+          "ms": 327,
+          "y": 914
+        },
+        {
+          "ms": 342,
+          "y": 914
+        },
+        {
+          "ms": 359,
+          "y": 914
+        },
+        {
+          "ms": 375,
+          "y": 914
+        },
+        {
+          "ms": 392,
+          "y": 914
+        },
+        {
+          "ms": 409,
+          "y": 914
+        },
+        {
+          "ms": 429,
+          "y": 914
+        },
+        {
+          "ms": 442,
+          "y": 914
+        },
+        {
+          "ms": 459,
+          "y": 914
+        },
+        {
+          "ms": 475,
+          "y": 914
+        },
+        {
+          "ms": 492,
+          "y": 914
+        },
+        {
+          "ms": 509,
+          "y": 914
+        },
+        {
+          "ms": 529,
+          "y": 914
+        },
+        {
+          "ms": 541,
+          "y": 914
+        },
+        {
+          "ms": 559,
+          "y": 914
+        }
+      ],
+      "intermediateFrames": 0
+    },
+    {
+      "name": "페이지 전환",
+      "version": "v2",
+      "initial": {
+        "y": 0,
+        "route": "3",
+        "selected": "2배 확대",
+        "frame": "13",
+        "reading": false
+      },
+      "end": {
+        "y": 914,
+        "route": "4",
+        "selected": "2배 확대",
+        "frame": "20",
+        "reading": false
+      },
+      "samples": [
+        {
+          "ms": 0,
+          "y": 0
+        },
+        {
+          "ms": 7,
+          "y": 0
+        },
+        {
+          "ms": 25,
+          "y": 38
+        },
+        {
+          "ms": 41,
+          "y": 149
+        },
+        {
+          "ms": 57,
+          "y": 251
+        },
+        {
+          "ms": 74,
+          "y": 344
+        },
+        {
+          "ms": 91,
+          "y": 427
+        },
+        {
+          "ms": 107,
+          "y": 501
+        },
+        {
+          "ms": 125,
+          "y": 568
+        },
+        {
+          "ms": 141,
+          "y": 628
+        },
+        {
+          "ms": 157,
+          "y": 680
+        },
+        {
+          "ms": 174,
+          "y": 725
+        },
+        {
+          "ms": 191,
+          "y": 764
+        },
+        {
+          "ms": 207,
+          "y": 797
+        },
+        {
+          "ms": 224,
+          "y": 825
+        },
+        {
+          "ms": 241,
+          "y": 848
+        },
+        {
+          "ms": 257,
+          "y": 867
+        },
+        {
+          "ms": 274,
+          "y": 882
+        },
+        {
+          "ms": 290,
+          "y": 893
+        },
+        {
+          "ms": 307,
+          "y": 901
+        },
+        {
+          "ms": 325,
+          "y": 907
+        },
+        {
+          "ms": 341,
+          "y": 911
+        },
+        {
+          "ms": 357,
+          "y": 913
+        },
+        {
+          "ms": 374,
+          "y": 914
+        },
+        {
+          "ms": 390,
+          "y": 914
+        },
+        {
+          "ms": 407,
+          "y": 914
+        },
+        {
+          "ms": 425,
+          "y": 914
+        },
+        {
+          "ms": 441,
+          "y": 914
+        },
+        {
+          "ms": 457,
+          "y": 914
+        },
+        {
+          "ms": 474,
+          "y": 914
+        },
+        {
+          "ms": 491,
+          "y": 914
+        },
+        {
+          "ms": 507,
+          "y": 914
+        },
+        {
+          "ms": 525,
+          "y": 914
+        },
+        {
+          "ms": 541,
+          "y": 914
+        },
+        {
+          "ms": 557,
+          "y": 914
+        }
+      ],
+      "intermediateFrames": 20
+    },
+    {
+      "name": "요청문 복사",
+      "version": "v2",
+      "method": "마우스 선택 후 단축키",
+      "buttons": 0,
+      "expectedLength": 205,
+      "actualLength": 205,
+      "matches": true
+    },
+    {
+      "name": "요청문 복사",
+      "version": "v3",
+      "method": "버튼 한 번",
+      "buttons": 6,
+      "expectedLength": 205,
+      "actualLength": 205,
+      "matches": true
+    },
+    {
+      "name": "자료 읽기",
+      "version": "v3",
+      "readButtonCount": 0,
+      "before": {
+        "y": 140,
+        "route": "0",
+        "selected": "저장 위치",
+        "frame": "12",
+        "reading": false
+      },
+      "samples": [
+        {
+          "y": 140,
+          "route": "0",
+          "selected": "저장 위치",
+          "frame": "15",
+          "reading": false
+        },
+        {
+          "y": 140,
+          "route": "0",
+          "selected": "저장 위치",
+          "frame": "18",
+          "reading": false
+        },
+        {
+          "y": 140,
+          "route": "0",
+          "selected": "저장 위치",
+          "frame": "21",
+          "reading": false
+        },
+        {
+          "y": 140,
+          "route": "0",
+          "selected": "저장 위치",
+          "frame": "24",
+          "reading": false
+        }
+      ]
+    },
+    {
+      "name": "자료 읽기",
+      "version": "v4",
+      "readButtonCount": 1,
+      "before": {
+        "y": 140,
+        "route": "0",
+        "selected": "저장 위치",
+        "frame": "13",
+        "reading": false
+      },
+      "samples": [
+        {
+          "y": 140,
+          "route": "0",
+          "selected": "저장 위치",
+          "frame": "13",
+          "reading": true
+        },
+        {
+          "y": 140,
+          "route": "0",
+          "selected": "저장 위치",
+          "frame": "13",
+          "reading": true
+        },
+        {
+          "y": 140,
+          "route": "0",
+          "selected": "저장 위치",
+          "frame": "13",
+          "reading": true
+        },
+        {
+          "y": 140,
+          "route": "0",
+          "selected": "저장 위치",
+          "frame": "13",
+          "reading": true
+        }
+      ]
+    },
+    {
+      "name": "복사 권한 거부",
+      "version": "v3",
+      "injection": "clipboard.writeText NotAllowedError",
+      "length": 205,
+      "selected": 205,
+      "focusReturned": true
+    },
+    {
+      "name": "인쇄",
+      "version": "v3",
+      "visibleCases": [
+        "panel-drop",
+        "panel-add",
+        "panel-reset",
+        "panel-zoom"
+      ],
+      "stills": 0,
+      "references": 6,
+      "prompts": 6,
+      "pdf": "수정3_인쇄_전.pdf"
+    },
+    {
+      "name": "인쇄",
+      "version": "v4",
+      "visibleCases": [
+        "panel-drop",
+        "panel-add",
+        "panel-reset",
+        "panel-zoom"
+      ],
+      "stills": 8,
+      "references": 7,
+      "prompts": 6,
+      "pdf": "수정3_인쇄_후.pdf"
+    }
+  ],
+  "sessions": [
+    {
+      "name": "전환-전",
+      "version": "v1",
+      "openedAt": "2026-11-12T23:18:52.756Z",
+      "console": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "actions": [
+        {
+          "at": "2026-11-12T23:18:53.335Z",
+          "elapsedMs": 253,
+          "text": "표지의 다음과 소개의 다음 선택"
+        },
+        {
+          "at": "2026-11-12T23:18:55.995Z",
+          "elapsedMs": 2913,
+          "text": "2배 확대에서 오른쪽 방향키: 같은 손동작으로 이동"
+        },
+        {
+          "at": "2026-11-12T23:18:57.361Z",
+          "elapsedMs": 4279,
+          "text": "왼쪽 방향키: 2배 확대로 복귀"
+        }
+      ],
+      "closedAt": "2026-11-12T23:18:58.521Z"
+    },
+    {
+      "name": "전환-후",
+      "version": "v2",
+      "openedAt": "2026-11-12T23:18:58.858Z",
+      "console": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "actions": [
+        {
+          "at": "2026-11-12T23:18:59.126Z",
+          "elapsedMs": 169,
+          "text": "표지의 다음과 소개의 다음 선택"
+        },
+        {
+          "at": "2026-11-12T23:19:01.937Z",
+          "elapsedMs": 2980,
+          "text": "2배 확대에서 오른쪽 방향키: 같은 손동작으로 이동"
+        },
+        {
+          "at": "2026-11-12T23:19:03.307Z",
+          "elapsedMs": 4349,
+          "text": "왼쪽 방향키: 2배 확대로 복귀"
+        }
+      ],
+      "closedAt": "2026-11-12T23:19:04.462Z"
+    },
+    {
+      "name": "복사-전",
+      "version": "v2",
+      "openedAt": "2026-11-12T23:19:04.762Z",
+      "console": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "actions": [
+        {
+          "at": "2026-11-12T23:19:05.012Z",
+          "elapsedMs": 153,
+          "text": "표지의 다음과 소개의 다음 선택"
+        },
+        {
+          "at": "2026-11-12T23:19:06.657Z",
+          "elapsedMs": 1799,
+          "text": "첫 요청문을 마우스로 처음부터 끝까지 선택하고 복사"
+        }
+      ],
+      "closedAt": "2026-11-12T23:19:09.043Z"
+    },
+    {
+      "name": "복사-후",
+      "version": "v3",
+      "openedAt": "2026-11-12T23:19:09.566Z",
+      "console": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "actions": [
+        {
+          "at": "2026-11-12T23:19:09.816Z",
+          "elapsedMs": 146,
+          "text": "표지의 다음과 소개의 다음 선택"
+        },
+        {
+          "at": "2026-11-12T23:19:11.436Z",
+          "elapsedMs": 1766,
+          "text": "Prompt 1 복사 버튼 선택"
+        }
+      ],
+      "closedAt": "2026-11-12T23:19:13.504Z"
+    },
+    {
+      "name": "읽기-전",
+      "version": "v3",
+      "openedAt": "2026-11-12T23:19:14.104Z",
+      "console": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "actions": [
+        {
+          "at": "2026-11-12T23:19:14.424Z",
+          "elapsedMs": 201,
+          "text": "표지의 다음과 소개의 다음 선택"
+        },
+        {
+          "at": "2026-11-12T23:19:15.925Z",
+          "elapsedMs": 1701,
+          "text": "동일한 위치에서 자료 읽기 조작 확인: 전환 버튼 0개"
+        }
+      ],
+      "closedAt": "2026-11-12T23:19:18.434Z"
+    },
+    {
+      "name": "읽기-후",
+      "version": "v4",
+      "openedAt": "2026-11-12T23:19:18.734Z",
+      "console": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "actions": [
+        {
+          "at": "2026-11-12T23:19:18.995Z",
+          "elapsedMs": 159,
+          "text": "표지의 다음과 소개의 다음 선택"
+        },
+        {
+          "at": "2026-11-12T23:19:20.462Z",
+          "elapsedMs": 1625,
+          "text": "현재 위치에서 자료 읽기 선택"
+        }
+      ],
+      "closedAt": "2026-11-12T23:19:22.998Z"
+    },
+    {
+      "name": "복사-권한거부",
+      "version": "v3",
+      "openedAt": "2026-11-12T23:19:23.591Z",
+      "console": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "actions": [
+        {
+          "at": "2026-11-12T23:19:23.837Z",
+          "elapsedMs": 142,
+          "text": "표지의 다음과 소개의 다음 선택"
+        },
+        {
+          "at": "2026-11-12T23:19:24.028Z",
+          "elapsedMs": 332,
+          "text": "시험 조건: clipboard.writeText에서 NotAllowedError 반환"
+        }
+      ],
+      "closedAt": "2026-11-12T23:19:24.343Z"
+    },
+    {
+      "name": "인쇄-전",
+      "version": "v3",
+      "openedAt": "2026-11-12T23:19:24.375Z",
+      "console": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "actions": [
+        {
+          "at": "2026-11-12T23:19:24.621Z",
+          "elapsedMs": 144,
+          "text": "표지의 다음과 소개의 다음 선택"
+        },
+        {
+          "at": "2026-11-12T23:19:25.068Z",
+          "elapsedMs": 592,
+          "text": "저장 위치 탭에서 영상을 멈춘 뒤 A4 인쇄"
+        }
+      ],
+      "closedAt": "2026-11-12T23:19:26.173Z"
+    },
+    {
+      "name": "인쇄-후",
+      "version": "v4",
+      "openedAt": "2026-11-12T23:19:26.218Z",
+      "console": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "actions": [
+        {
+          "at": "2026-11-12T23:19:26.463Z",
+          "elapsedMs": 142,
+          "text": "표지의 다음과 소개의 다음 선택"
+        },
+        {
+          "at": "2026-11-12T23:19:26.907Z",
+          "elapsedMs": 586,
+          "text": "저장 위치 탭에서 영상을 멈춘 뒤 A4 인쇄"
+        }
+      ],
+      "closedAt": "2026-11-12T23:19:27.636Z"
+    }
+  ],
+  "clips": [
+    {
+      "name": "transition-전",
+      "file": "raw/transition-전.webm",
+      "start": 1.9775895840000002,
+      "duration": 3.4614052079999995,
+      "rawDuration": 6.28,
+      "timeline": "페이지 생성 완료 뒤 측정한 경과 시간. 종료 시 인코더가 덧붙인 마지막 정지 구간은 잘라낸다."
+    },
+    {
+      "name": "transition-후",
+      "file": "raw/transition-후.webm",
+      "start": 2.04020975,
+      "duration": 3.4641607919999986,
+      "rawDuration": 6.4,
+      "timeline": "페이지 생성 완료 뒤 측정한 경과 시간. 종료 시 인코더가 덧붙인 마지막 정지 구간은 잘라낸다."
+    },
+    {
+      "name": "copy-전",
+      "file": "raw/copy-전.webm",
+      "start": 0.9353095410000005,
+      "duration": 3.2492947920000006,
+      "rawDuration": 4.04,
+      "timeline": "페이지 생성 완료 뒤 측정한 경과 시간. 종료 시 인코더가 덧붙인 마지막 정지 구간은 잘라낸다."
+    },
+    {
+      "name": "copy-후",
+      "file": "raw/copy-후.webm",
+      "start": 0.9154239579999994,
+      "duration": 2.9177512090000017,
+      "rawDuration": 4.84,
+      "timeline": "페이지 생성 완료 뒤 측정한 경과 시간. 종료 시 인코더가 덧붙인 마지막 정지 구간은 잘라낸다."
+    },
+    {
+      "name": "reading-전",
+      "file": "raw/reading-전.webm",
+      "start": 0.8476150000000016,
+      "duration": 3.3624863339999975,
+      "rawDuration": 5.08,
+      "timeline": "페이지 생성 완료 뒤 측정한 경과 시간. 종료 시 인코더가 덧붙인 마지막 정지 구간은 잘라낸다."
+    },
+    {
+      "name": "reading-후",
+      "file": "raw/reading-후.webm",
+      "start": 0.769619832999997,
+      "duration": 3.391920334000002,
+      "rawDuration": 5.24,
+      "timeline": "페이지 생성 완료 뒤 측정한 경과 시간. 종료 시 인코더가 덧붙인 마지막 정지 구간은 잘라낸다."
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "수정1_페이지전환.gif",
+      "kind": "실제 녹화 좌우 비교 GIF",
+      "before": "v1",
+      "after": "v2",
+      "playbackSpeed": 0.5,
+      "description": "준비 구간을 잘라 시작을 맞추고, 먼저 끝난 녹화의 마지막 프레임을 유지한다. 상단은 판본과 조작을 적은 캡션이다."
+    },
+    {
+      "file": "수정2_요청문복사.gif",
+      "kind": "실제 녹화 좌우 비교 GIF",
+      "before": "v2",
+      "after": "v3",
+      "playbackSpeed": 1.0,
+      "description": "준비 구간을 잘라 시작을 맞추고, 먼저 끝난 녹화의 마지막 프레임을 유지한다. 상단은 판본과 조작을 적은 캡션이다."
+    },
+    {
+      "file": "수정3_자료읽기.gif",
+      "kind": "실제 녹화 좌우 비교 GIF",
+      "before": "v3",
+      "after": "v4",
+      "playbackSpeed": 1.0,
+      "description": "준비 구간을 잘라 시작을 맞추고, 먼저 끝난 녹화의 마지막 프레임을 유지한다. 상단은 판본과 조작을 적은 캡션이다."
+    },
+    {
+      "file": "수정3_인쇄_전.pdf",
+      "pages": 14,
+      "preview": "수정3_인쇄_전_전체페이지.png"
+    },
+    {
+      "file": "수정3_인쇄_후.pdf",
+      "pages": 16,
+      "preview": "수정3_인쇄_후_전체페이지.png"
+    }
+  ],
+  "browser": "157.0.8103.51",
+  "finishedAt": "2026-11-12T23:19:27.942Z",
+  "artifactHashes": {
+    "브라우저콘솔.log": {
+      "bytes": 2667,
+      "sha256": "2c10776423d7bdc9f23d934f581a79c5da4fd1ed68d6dcd860e9833c20d2e98d"
+    },
+    "수정1_전.png": {
+      "bytes": 256894,
+      "sha256": "b58052c2367fcb56619e10d69110016ecca3b9bb9160007e92f075e2091dde9b"
+    },
+    "수정1_페이지전환.gif": {
+      "bytes": 5208590,
+      "sha256": "8dcc20678e70f659e72aca372b38039ec3a6a8b96e9ef5011a24c069a28f1aef"
+    },
+    "수정1_후.png": {
+      "bytes": 256894,
+      "sha256": "b58052c2367fcb56619e10d69110016ecca3b9bb9160007e92f075e2091dde9b"
+    },
+    "수정2_복사권한거부.png": {
+      "bytes": 82668,
+      "sha256": "1c083b0d6e6df99a58a30ebc52b2026dece99a3600f41460f49facc4d7fcceab"
+    },
+    "수정2_요청문복사.gif": {
+      "bytes": 1211268,
+      "sha256": "ed230ea6c87557be228d6a0d668030c5f751d7b68c50c530f490f25816a6f1da"
+    },
+    "수정2_전.png": {
+      "bytes": 108967,
+      "sha256": "87170e2749f45faa6150e7fbed458106a50a446ea4c6a11f7537ce60fa0095a1"
+    },
+    "수정2_후.png": {
+      "bytes": 90844,
+      "sha256": "91a1c3077e9f4016d52594bfa199cef29cb66282b68ab295c21fe3965342e3fb"
+    },
+    "수정3_인쇄_전.pdf": {
+      "bytes": 1846969,
+      "sha256": "2a549fd68747ea48885fe82adb4c03521bbe4e877458b4981011e10d09698ac3"
+    },
+    "수정3_인쇄_전_전체페이지.png": {
+      "bytes": 1126551,
+      "sha256": "42fe8de6bf4143d9bfb9b022a97fe081ca28f74a63a5b19c512b7533cf43c175"
+    },
+    "수정3_인쇄_후.pdf": {
+      "bytes": 2133331,
+      "sha256": "9ddf6f5e2e909bd07f5851ea505140a7218f8042d773641bb5087fc9fe20fcd2"
+    },
+    "수정3_인쇄_후_전체페이지.png": {
+      "bytes": 1291293,
+      "sha256": "7a97e47bcae4860831fcf14348b9d7663551ad9c01abe9dabdd54a29d2c20884"
+    },
+    "수정3_인쇄비교.png": {
+      "bytes": 550110,
+      "sha256": "33e2f5311d93e3636c6d4b6f0881260881a54a46a5e406e1563e1d90fd9e08f9"
+    },
+    "수정3_자료읽기.gif": {
+      "bytes": 2499042,
+      "sha256": "2b35149bfdf0d6cd98a106ce6d83b2aedf24fe34efe56412e19d3d159b33ad25"
+    },
+    "수정3_전.png": {
+      "bytes": 302487,
+      "sha256": "51da877faba4b32d077eacc3ee512b25175340ccedc24db2f7e21987ac2a8808"
+    },
+    "수정3_후.png": {
+      "bytes": 259349,
+      "sha256": "4e995b559aca5331424576b9a75ab96e5748353b870bdc605fd74ac2473dafb4"
+    }
+  }
+}

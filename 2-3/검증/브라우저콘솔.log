@@ -1,0 +1,50 @@
+Browser: Chrome 157.0.8103.51
+Captured: 2026-11-12T23:18:50.749Z
+Viewport: 1000x760
+
+[SESSION 전환-전 / v1] 2026-11-12T23:18:52.756Z
+[ACTION 2026-11-12T23:18:53.335Z] 표지의 다음과 소개의 다음 선택
+[ACTION 2026-11-12T23:18:55.995Z] 2배 확대에서 오른쪽 방향키: 같은 손동작으로 이동
+[ACTION 2026-11-12T23:18:57.361Z] 왼쪽 방향키: 2배 확대로 복귀
+[COUNTS] console=0 pageerror=0 requestfailed=0
+
+[SESSION 전환-후 / v2] 2026-11-12T23:18:58.858Z
+[ACTION 2026-11-12T23:18:59.126Z] 표지의 다음과 소개의 다음 선택
+[ACTION 2026-11-12T23:19:01.937Z] 2배 확대에서 오른쪽 방향키: 같은 손동작으로 이동
+[ACTION 2026-11-12T23:19:03.307Z] 왼쪽 방향키: 2배 확대로 복귀
+[COUNTS] console=0 pageerror=0 requestfailed=0
+
+[SESSION 복사-전 / v2] 2026-11-12T23:19:04.762Z
+[ACTION 2026-11-12T23:19:05.012Z] 표지의 다음과 소개의 다음 선택
+[ACTION 2026-11-12T23:19:06.657Z] 첫 요청문을 마우스로 처음부터 끝까지 선택하고 복사
+[COUNTS] console=0 pageerror=0 requestfailed=0
+
+[SESSION 복사-후 / v3] 2026-11-12T23:19:09.566Z
+[ACTION 2026-11-12T23:19:09.816Z] 표지의 다음과 소개의 다음 선택
+[ACTION 2026-11-12T23:19:11.436Z] Prompt 1 복사 버튼 선택
+[COUNTS] console=0 pageerror=0 requestfailed=0
+
+[SESSION 읽기-전 / v3] 2026-11-12T23:19:14.104Z
+[ACTION 2026-11-12T23:19:14.424Z] 표지의 다음과 소개의 다음 선택
+[ACTION 2026-11-12T23:19:15.925Z] 동일한 위치에서 자료 읽기 조작 확인: 전환 버튼 0개
+[COUNTS] console=0 pageerror=0 requestfailed=0
+
+[SESSION 읽기-후 / v4] 2026-11-12T23:19:18.734Z
+[ACTION 2026-11-12T23:19:18.995Z] 표지의 다음과 소개의 다음 선택
+[ACTION 2026-11-12T23:19:20.462Z] 현재 위치에서 자료 읽기 선택
+[COUNTS] console=0 pageerror=0 requestfailed=0
+
+[SESSION 복사-권한거부 / v3] 2026-11-12T23:19:23.591Z
+[ACTION 2026-11-12T23:19:23.837Z] 표지의 다음과 소개의 다음 선택
+[ACTION 2026-11-12T23:19:24.028Z] 시험 조건: clipboard.writeText에서 NotAllowedError 반환
+[COUNTS] console=0 pageerror=0 requestfailed=0
+
+[SESSION 인쇄-전 / v3] 2026-11-12T23:19:24.375Z
+[ACTION 2026-11-12T23:19:24.621Z] 표지의 다음과 소개의 다음 선택
+[ACTION 2026-11-12T23:19:25.068Z] 저장 위치 탭에서 영상을 멈춘 뒤 A4 인쇄
+[COUNTS] console=0 pageerror=0 requestfailed=0
+
+[SESSION 인쇄-후 / v4] 2026-11-12T23:19:26.218Z
+[ACTION 2026-11-12T23:19:26.463Z] 표지의 다음과 소개의 다음 선택
+[ACTION 2026-11-12T23:19:26.907Z] 저장 위치 탭에서 영상을 멈춘 뒤 A4 인쇄
+[COUNTS] console=0 pageerror=0 requestfailed=0
