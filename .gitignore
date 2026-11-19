@@ -1,0 +1,120 @@
+# ---------------------------------------------------------------
+# Codyssey AI Native (public repository)
+# Anything listed here never leaves this machine.
+# ---------------------------------------------------------------
+
+# Copies of course mission statements
+*_spec.md
+AI Native [0-9]-[0-9]*
+
+# Local-only workspace
+# Unmasked screenshots, raw generations, peer samples, received feedback
+unuse/
+
+# Secrets and credentials
+# Mask keys, tokens and account emails in docs and screenshots as well.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+secrets/
+.secrets/
+*.pem
+*.p12
+*.pfx
+# *.key also matches Keynote decks; add one with `git add -f` if needed
+*.key
+id_rsa*
+id_ed25519*
+# Google Apps Script (clasp) and Google OAuth
+.clasprc.json
+credentials.json
+client_secret*.json
+token.json
+service-account*.json
+# Self-hosted n8n data (holds its encryption key and credentials)
+.n8n/
+
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.DocumentRevisions-V100
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Office and LibreOffice lock files
+~$*
+.~lock.*#
+
+# Unfinished browser downloads
+*.crdownload
+*.download
+*.part
+
+# Video and audio editing caches
+# Final MP4s and source media stay trackable; only caches are ignored.
+CacheClip/
+OptimizedMedia/
+ProxyMedia/
+Adobe Premiere Pro Auto-Save/
+Adobe Premiere Pro Video Previews/
+Adobe Premiere Pro Audio Previews/
+*.pek
+*.cfa
+*.aup3-shm
+*.aup3-wal
+ffmpeg2pass-*.log*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# AI assistants (local instructions, settings, scratch)
+# Ignored files stay on disk, so Codex and Claude Code still read them.
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+AGENTS.md
+AGENTS.override.md
+.codex/
+.agents/
+.codex_tmp/
+# Leftovers from patches that failed to apply (e.g. `codex apply`)
+*.orig
+*.rej
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Caches, logs and leftovers
+.cache/
+*.log
+*.tmp
+*.bak
