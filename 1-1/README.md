@@ -7,8 +7,8 @@
 3. [실행 로그](./docs/run-log.md): Opus와 나눈 10턴 대화 원문, 확인 결과, 작업 기록, BONUS 3 호출 기록입니다.
 4. [미해결 기록](./docs/unresolved.md): DeepSeek에 작업표를 두 번 고쳐 달라고 해도 풀리지 않은 문제 2건입니다.
 
-## 부록
+## Appendix
 
-- [검토표](https://imyesung.github.io/codyssey-ai-native/1-1/responses/)는 채점 기준, 판정, 모델 응답을 한 화면에서 대조하는 페이지입니다. 파일 목록에서 `responses/index.html`을 열면 HTML 코드로 보입니다.
+- [판단 근거 페이지](https://imyesung.github.io/codyssey-ai-native/1-1/responses/)는 모델 선정, 답변 채점, 프롬프트 수정, 미해결 과제에서 내린 판단과 근거를 한 화면에 모은 웹페이지입니다. 파일 목록에서 `responses/index.html`을 열면 HTML 코드로 보입니다.
 - [모델별 응답](./responses/)은 문서가 근거로 인용한 응답 원문입니다. `responses/*/docs/`는 각 모델이 만든 빈 양식이며 제출 문서가 아닙니다.
 - [모델 비교 보고서 PDF](./appendix/model-comparison.pdf)는 1번 문서를 인쇄용으로 조판한 판입니다.
