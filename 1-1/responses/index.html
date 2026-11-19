@@ -2200,4 +2200,33 @@ if (location.protocol === 'file:') {
   privateSources.onerror=start; document.head.append(privateSources);
 } else { start(); }
 </script>
+<script>
+// 판단을 확정한 페이지라서, 비어 있는 입력칸은 제목과 출처 표시까지 함께 숨긴다.
+(() => {
+  const related = t => {
+    const nodes = [t];
+    if (t.id) {
+      nodes.push(...document.querySelectorAll('label[for="' + CSS.escape(t.id) + '"]'));
+      const note = document.getElementById(t.id + '-source');
+      if (note) nodes.push(note);
+    }
+    return nodes;
+  };
+  const sync = () => {
+    for (const t of document.querySelectorAll('textarea')) {
+      const empty = !t.value.trim();
+      for (const node of related(t)) {
+        if (empty && !node.hidden) { node.hidden = true; node.dataset.emptyHidden = ''; }
+        else if (!empty && 'emptyHidden' in node.dataset) { node.hidden = false; delete node.dataset.emptyHidden; }
+      }
+    }
+  };
+  let queued = false;
+  const schedule = () => { if (!queued) { queued = true; requestAnimationFrame(() => { queued = false; sync(); }); } };
+  sync();
+  new MutationObserver(schedule).observe(document.body, {childList: true, subtree: true});
+  document.addEventListener('input', schedule);
+  addEventListener('load', schedule);
+})();
+</script>
 </html>
