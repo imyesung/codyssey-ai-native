@@ -597,7 +597,7 @@ table.source-table :is(th,td) { word-break:keep-all; overflow-wrap:anywhere; }
 <li>끝내 풀지 못한 일 2개와 각각 막힌 이유</li>
 </ol>
 <p class="online"><span data-spec="216">과제 안내 / 직접 작성할 내용</span>　<span data-spec="217">답변 판정</span></p>
-<div class="draft-tools screen-only" id="draft-tools"><button class="draft-save" id="draft-save" type="button">임시저장</button><button id="save" type="button">내 판단 내려받기 (JSON)</button><output id="state" role="status" aria-live="polite"></output><div class="scale-strip" id="scale-strip" aria-hidden="true" hidden></div></div>
+<div class="draft-tools screen-only" id="draft-tools"><button class="draft-save" id="draft-save" type="button" hidden>임시저장</button><button id="save" type="button" hidden>내 판단 내려받기 (JSON)</button><output id="state" role="status" aria-live="polite" hidden></output><div class="scale-strip" id="scale-strip" aria-hidden="true" hidden></div></div>
 <section class="model-section"><h2>1. 모델 선정</h2>
 
 <section class="whole-reading screen-only"><h3>모델 응답 전문</h3><div id="full-choices" class="full-choices" aria-label="전문을 읽을 모델"></div><div id="full-reader" class="full-review" hidden></div></section>
@@ -1608,8 +1608,7 @@ function renderFullReader(host,m,doc,standalone,initialLine) {
   };
   const links=el('div','panel-links');
   if(standalone) {
-    const save=button('draft-save','임시저장'), state=el('output','reader-notice');
-    links.append(save,state,link('판단 근거 페이지 열기',pageLink({}),'source-name'));connectDraft(save,state,m.id);
+    links.append(link('판단 근거 페이지 열기',pageLink({}),'source-name'));
   }
   else links.append(alternate,close);
   head.append(title,links);host.append(head);
