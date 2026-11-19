@@ -5,6 +5,7 @@
 
 # Copies of course mission statements
 *_spec.md
+*.local.js
 AI Native [0-9]-[0-9]*
 
 # Local-only workspace

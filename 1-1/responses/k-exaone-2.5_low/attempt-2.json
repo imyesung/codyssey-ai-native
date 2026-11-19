@@ -1,0 +1,6 @@
+{
+  "time": "2026-11-19T04:23:45.166Z",
+  "model": "k-exaone_v2.5",
+  "inputSha256": "6fde63a60eca5db44f34be1eea22e1ffe1ca225b802b61367b5a0adfa19f90f9",
+  "error": "시간 초과: https://api.exaone.ai/v1/chat/completions"
+}

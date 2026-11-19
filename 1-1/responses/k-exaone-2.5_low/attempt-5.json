@@ -1,0 +1,23 @@
+{
+  "time": "2026-11-19T04:50:05.955Z",
+  "model": "k-exaone_v2.5",
+  "inputSha256": "6fde63a60eca5db44f34be1eea22e1ffe1ca225b802b61367b5a0adfa19f90f9",
+  "httpStatus": 200,
+  "returnedModel": "k-exaone_v2.5",
+  "usage": {
+    "completion_tokens": 6400,
+    "prompt_tokens": 4239,
+    "total_tokens": 10639,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cache_write_tokens": null,
+      "cached_tokens": 4236,
+      "image_tokens": null,
+      "text_tokens": null
+    },
+    "reasoning_tokens": 6351
+  },
+  "finishReason": "length",
+  "answer": "\n\n아래는 이 미션을 “시작”하기 위한 키트입니다.  \n표시 규칙: `[ ]` = 참여자가 직접 작성·판정, `[원문 미지정]` = 원문에 구체적 위치/이름/도구가 없음, `[선택]`"
+}
