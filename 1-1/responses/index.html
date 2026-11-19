@@ -2221,12 +2221,24 @@ if (location.protocol === 'file:') {
       }
     }
   };
+  // 내용이 있는 칸은 스크롤 없이 한눈에 보이도록 높이를 내용에 맞춘다.
+  const fit = t => {
+    if (t.hidden || !t.offsetParent) return;
+    t.style.height = 'auto';
+    t.style.height = t.scrollHeight + (t.offsetHeight - t.clientHeight) + 'px';
+  };
+  const fitAll = () => document.querySelectorAll('textarea').forEach(fit);
   let queued = false;
-  const schedule = () => { if (!queued) { queued = true; requestAnimationFrame(() => { queued = false; sync(); }); } };
-  sync();
+  const schedule = () => { if (!queued) { queued = true; requestAnimationFrame(() => { queued = false; sync(); fitAll(); }); } };
+  sync(); fitAll();
   new MutationObserver(schedule).observe(document.body, {childList: true, subtree: true});
   document.addEventListener('input', schedule);
+  document.addEventListener('toggle', schedule, true);
+  addEventListener('resize', schedule);
   addEventListener('load', schedule);
+  document.fonts?.ready.then(schedule);
+  addEventListener('beforeprint', () => document.querySelectorAll('textarea').forEach(t => { t.style.height = ''; }));
+  addEventListener('afterprint', schedule);
 })();
 </script>
 </html>
