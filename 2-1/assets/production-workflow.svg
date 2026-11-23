@@ -1,39 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="352" viewBox="0 0 500 352" role="img" aria-labelledby="title desc" lang="ko">
-  <title id="title">ΕΠΟΣ 제작 흐름</title>
-  <desc id="desc">여섯 컷을 기획하고 영상, 원화, 음성을 생성한다. 화면 편집과 사운드 편집의 결과를 합쳐 가로본, 세로본과 크레딧 상영본을 검수한다.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="420" viewBox="0 0 500 420" role="img" aria-labelledby="title desc" lang="ko">
+  <title id="title">ΕΠΟΣ 제작 파이프라인</title>
+  <desc id="desc">여섯 컷을 기획한 뒤 두 갈래로 작업한다. 유적 영상과 청동상 원화는 컷 편집에, 그리스어 음성과 기악곡은 사운드 믹싱에 쓴다. 두 결과를 합쳐 “에포스”라는 발음과 북소리에 로고를 맞춘 뒤 가로본, 세로본, 크레딧 상영본을 출력하고 각 파일의 규격을 확인한다.</desc>
   <defs>
-    <marker id="arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="m1 1 5 3-5 3" fill="none" stroke="#58697a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0.5 7 4 0 7.5Z" fill="#171717"/>
     </marker>
+    <style>
+      .wire { fill: none; stroke: #171717; stroke-width: 1.8; stroke-linejoin: round; }
+      .step rect { fill: white; stroke: #171717; stroke-width: 1.8; }
+      text { fill: #171717; font-family: "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; text-anchor: middle; }
+      .label { font-size: 20px; font-weight: 700; }
+      .detail { font-size: 17px; }
+    </style>
   </defs>
-  <rect x="1" y="1" width="498" height="350" rx="14" fill="#faf9f5" stroke="#d9d8d0"/>
-  <g fill="none" stroke="#58697a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M250 65v18" marker-end="url(#arrow)"/>
-    <path d="M250 136v10"/>
-    <path d="M250 146H133q-8 0-8 8v12" marker-end="url(#arrow)"/>
-    <path d="M250 146h117q8 0 8 8v12" marker-end="url(#arrow)"/>
-    <path d="M125 235v10q0 8 8 8h234q8 0 8-8v-10"/>
-    <path d="M250 253v16" marker-end="url(#arrow)"/>
+  <rect width="500" height="420" fill="white"/>
+
+  <g class="wire">
+    <path d="M250 66V80"/>
+    <path d="M250 80H121V94" marker-end="url(#arrow)"/>
+    <path d="M250 80H379V94" marker-end="url(#arrow)"/>
+    <path d="M121 154V182" marker-end="url(#arrow)"/>
+    <path d="M379 154V182" marker-end="url(#arrow)"/>
+    <path d="M121 242V256H379V242"/>
+    <path d="M250 256V270" marker-end="url(#arrow)"/>
+    <path d="M250 330V354" marker-end="url(#arrow)"/>
   </g>
-  <g stroke="#b9c0c4" fill="#fff">
-    <rect x="18" y="172" width="214" height="63" rx="8"/>
-    <rect x="268" y="172" width="214" height="63" rx="8"/>
+
+  <g class="step" transform="translate(137 8)">
+    <rect width="226" height="58" rx="5"/>
+    <text class="label" x="113" y="25">컷 기획</text>
+    <text class="detail" x="113" y="47">10초 광고를 여섯 컷으로</text>
   </g>
-  <rect x="91" y="275" width="318" height="63" rx="8" fill="#203448"/>
-  <g font-family="'Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" text-anchor="middle">
-    <g fill="#182938" font-size="22" font-weight="700">
-      <text x="250" y="36">기획</text>
-      <text x="250" y="106">소재 생성</text>
-      <text x="125" y="198">화면 편집</text>
-      <text x="375" y="198">사운드 편집</text>
-      <text x="250" y="302" fill="#fff">마스터 검수</text>
-    </g>
-    <g fill="#455464" font-size="16">
-      <text x="250" y="59">10초를 여섯 컷으로</text>
-      <text x="250" y="129">여행지 영상, 청동상 원화, 그리스어 음성</text>
-      <text x="125" y="222">가로본과 세로본</text>
-      <text x="375" y="222">내레이션, 음악, 효과음</text>
-      <text x="250" y="326" fill="#f2f3f3">10초 본편 2종과 크레딧 상영본</text>
-    </g>
+
+  <g class="step" transform="translate(8 96)">
+    <rect width="226" height="58" rx="5"/>
+    <text class="label" x="113" y="25">화면 소재 생성</text>
+    <text class="detail" x="113" y="47">유적 영상, 청동상 원화</text>
+  </g>
+  <g class="step" transform="translate(266 96)">
+    <rect width="226" height="58" rx="5"/>
+    <text class="label" x="113" y="25">음원 준비</text>
+    <text class="detail" x="113" y="47">그리스어 음성, 기악곡</text>
+  </g>
+
+  <g class="step" transform="translate(8 184)">
+    <rect width="226" height="58" rx="5"/>
+    <text class="label" x="113" y="25">컷 편집 (Fine Cut)</text>
+    <text class="detail" x="113" y="47">컷 연결, 세로 구도 조정</text>
+  </g>
+  <g class="step" transform="translate(266 184)">
+    <rect width="226" height="58" rx="5"/>
+    <text class="label" x="113" y="25">사운드 믹싱</text>
+    <text class="detail" x="113" y="47">목소리, 음악, 북, 파도</text>
+  </g>
+
+  <g class="step" transform="translate(137 272)">
+    <rect width="226" height="58" rx="5"/>
+    <text class="label" x="113" y="25">화면과 소리 합치기</text>
+    <text class="detail" x="113" y="47">“에포스”와 북에 로고를 맞춤</text>
+  </g>
+  <g class="step" transform="translate(137 356)">
+    <rect width="226" height="58" rx="5"/>
+    <text class="label" x="113" y="25">최종본 출력과 확인</text>
+    <text class="detail" x="113" y="47">가로본, 세로본, 상영본</text>
   </g>
 </svg>
