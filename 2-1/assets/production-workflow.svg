@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="352" viewBox="0 0 500 352" role="img" aria-labelledby="title desc" lang="ko">
+  <title id="title">ΕΠΟΣ 제작 흐름</title>
+  <desc id="desc">여섯 컷을 기획하고 영상, 원화, 음성을 생성한다. 화면 편집과 사운드 편집의 결과를 합쳐 가로본, 세로본과 크레딧 상영본을 검수한다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="m1 1 5 3-5 3" fill="none" stroke="#58697a" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="498" height="350" rx="14" fill="#faf9f5" stroke="#d9d8d0"/>
+  <g fill="none" stroke="#58697a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 65v18" marker-end="url(#arrow)"/>
+    <path d="M250 136v10"/>
+    <path d="M250 146H133q-8 0-8 8v12" marker-end="url(#arrow)"/>
+    <path d="M250 146h117q8 0 8 8v12" marker-end="url(#arrow)"/>
+    <path d="M125 235v10q0 8 8 8h234q8 0 8-8v-10"/>
+    <path d="M250 253v16" marker-end="url(#arrow)"/>
+  </g>
+  <g stroke="#b9c0c4" fill="#fff">
+    <rect x="18" y="172" width="214" height="63" rx="8"/>
+    <rect x="268" y="172" width="214" height="63" rx="8"/>
+  </g>
+  <rect x="91" y="275" width="318" height="63" rx="8" fill="#203448"/>
+  <g font-family="'Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" text-anchor="middle">
+    <g fill="#182938" font-size="22" font-weight="700">
+      <text x="250" y="36">기획</text>
+      <text x="250" y="106">소재 생성</text>
+      <text x="125" y="198">화면 편집</text>
+      <text x="375" y="198">사운드 편집</text>
+      <text x="250" y="302" fill="#fff">마스터 검수</text>
+    </g>
+    <g fill="#455464" font-size="16">
+      <text x="250" y="59">10초를 여섯 컷으로</text>
+      <text x="250" y="129">여행지 영상, 청동상 원화, 그리스어 음성</text>
+      <text x="125" y="222">가로본과 세로본</text>
+      <text x="375" y="222">내레이션, 음악, 효과음</text>
+      <text x="250" y="326" fill="#f2f3f3">10초 본편 2종과 크레딧 상영본</text>
+    </g>
+  </g>
+</svg>
