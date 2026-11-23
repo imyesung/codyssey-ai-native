@@ -38,7 +38,7 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 
 ## 제작 파이프라인
 
-아래는 제작 기록을 바탕으로 소재가 다음 단계에 어떻게 쓰였는지 정리한 작업 흐름이다.
+제작 기록을 바탕으로 소재가 다음 단계에 어떻게 쓰였는지 정리한 작업 흐름.
 
 ### 01 기획
 
@@ -70,9 +70,11 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 
 ### 05 최종본 출력과 확인
 
-- 16:9와 9:16의 10초 본편을 각각 출력하고, 슬레이트와 크레딧을 넣은 상영본을 별도로 출력했다.
+- $16:9$와 $9:16$의 10초 본편을 각각 출력하고, 슬레이트와 크레딧을 넣은 상영본을 별도로 출력했다.
 - 세 영상의 해상도, 길이, 프레임 수와 AAC 오디오를 확인했다.
 - 상영본과 세로본의 WebM 미리보기에서 화면과 스테레오 음성을 확인하고, README의 링크를 원본 MP4와 대조했다.
+
+**Figure 1.** 10초 광고 제작 흐름: 컷 기획부터 최종본 출력까지
 
 ![여섯 컷 기획 뒤 영상과 원화는 컷 편집으로, 그리스어 음성과 기악곡은 사운드 믹싱으로 이어진다. 화면과 소리를 합쳐 가로본, 세로본, 크레딧 상영본을 출력하고 각 파일의 규격을 확인한다.](assets/production-workflow.svg)
 
@@ -82,14 +84,14 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 
 | 컷과 화면 | 본편 타임코드 | 생성 도구 | 입력 프롬프트 |
 |---|---|---|---|
-| **Cut&nbsp;01**<br>바위를 딛는 샌들 | `00:00.000` ~ `00:00.875` | Gemini 영상 | [V02](#v02) |
+| **Cut&nbsp;01**<br>샌들 타이트 | `00:00.000` ~ `00:00.875` | Gemini 영상 | [V02](#v02) |
 | **Cut&nbsp;02**<br>토리코스 극장 | `00:00.875` ~ `00:02.458` | Gemini 영상 | [V03](#v03) |
-| **Cut&nbsp;03**<br>델포이 유적 | `00:02.458` ~ `00:03.708` | Gemini 영상, Pocket TTS Greek | [V03](#v03), [A01](#a01) |
-| **Cut&nbsp;04**<br>미케네 사자의 문 | `00:03.708` ~ `00:04.250` | Gemini 영상, Pocket TTS Greek | [V03](#v03), [A01](#a01) |
-| **Cut&nbsp;05**<br>청동상 | `00:04.250` ~ `00:05.667` | ChatGPT Images (ImageGen), Pocket TTS Greek | [I01](#i01), [A01](#a01), [A02](#a02) |
-| **Cut&nbsp;06**<br>수니온 곶 | `00:05.667` ~ `00:10.000` | Gemini 영상, RealVisXL, Pocket TTS Greek | [V04](#v04), [I02](#i02), [A02](#a02), [A03](#a03) |
+| **Cut&nbsp;03**<br>델포이 유적 | `00:02.458` ~ `00:03.708` | Gemini 영상,<br>Pocket TTS Greek | [V03](#v03), [A01](#a01) |
+| **Cut&nbsp;04**<br>미케네 사자의 문 | `00:03.708` ~ `00:04.250` | Gemini 영상,<br>Pocket TTS Greek | [V03](#v03), [A01](#a01) |
+| **Cut&nbsp;05**<br>청동상 | `00:04.250` ~ `00:05.667` | ChatGPT Images (ImageGen),<br>Pocket TTS Greek | [I01](#i01), [A01](#a01), [A02](#a02) |
+| **Cut&nbsp;06**<br>수니온 곶 | `00:05.667` ~ `00:10.000` | Gemini 영상, RealVisXL,<br>Pocket TTS Greek | [V04](#v04), [I02](#i02), [A02](#a02), [A03](#a03) |
 
-### Edit Notes by Cut
+#### Edit Notes by Cut
 
 - **Cut 01** 샌들이 돌을 밀어내는 동작만 남겼다. 세로본은 발을 따라 구도를 왼쪽으로 옮겼다.
 - **Cut 02** 돌 객석이 낮은 사선으로 뻗어 있는 구간을 골랐다. 세로본의 지명은 화면 중앙에 놓았다.
@@ -100,9 +102,9 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 
 ## Version Comparison
 
-### Cut 01 버전 비교
+#### Cut 01 버전 비교
 
-왼쪽은 **v1 기본 요청**, 오른쪽은 **도약 조건을 추가한 v2**다. 두 생성본의 `00:00.000` ~ `00:04.500` 구간을 같은 속도로 재생한다.
+왼쪽은 **v1 기본 요청**, 오른쪽은 **도약 조건을 추가한 v2**. 두 생성본의 `00:00.000` ~ `00:04.500` 구간을 같은 속도로 재생한다.
 
 ![Cut 01 v1과 v2. 두 화면 모두 샌들에서 출발해 카메라가 뒤로 빠지면서 날개와 해안이 보인다.](assets/opening-v1-v2.gif)
 
@@ -115,7 +117,7 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 - v1: `EPOS-v09-Gemini-opening-original.mp4`
 - v2: `EPOS-v09-Gemini-opening-v2-original.mp4`
 
-### Cut 05 청동상: 카메라 무빙 연출
+#### Cut 05 청동상: 카메라 무빙 연출
 
 [원화 프롬프트 I01](#i01)에서 먼저 카메라가 지나갈 두 지점을 정했다. 창을 쥔 오른손은 화면 왼쪽에서 45%, 위에서 66% 지점에, 얼굴은 왼쪽에서 56%, 위에서 25% 지점에 두도록 했다. 창대는 왼쪽 아래에서 비스듬히 올라가고, 얼굴과 눈은 그 옆으로 드러나도록 요청했다.
 
@@ -125,7 +127,7 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 
 ![청동상의 손과 창대에서 투구 아래 얼굴까지 올라가는 본편 장면](assets/cut05-hand-to-face.gif)
 
-### Cut 06 수니온: 생성 요청과 화면 비율
+#### Cut 06 수니온: 생성 요청과 화면 비율
 
 [V05](#v05)는 영어로 4초를 지정하고, 신전은 오른쪽 위에, 빈 수면은 화면 아래 절반에 두도록 했다. 기와지붕과 긴 열주까지 지정한 이 요청은 오류로 끝났다. [V04](#v04)에서는 한국어로 고정 카메라, 절벽 위 신전, 절벽에 닿는 파도 한 줄만 남겨 영상을 얻었다.
 
@@ -137,15 +139,20 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 
 #### 가로 본편과 세로본 대조
 
-| 항목 | 가로 본편 | 세로본 |
-|---|---|---|
-| 파일 | ΕΠΟΣ_광고.mp4 | bonus/ΕΠΟΣ_세로.mp4 |
-| 화면 비율 및 해상도 | 16:9, 1280×720 | 9:16, 720×1280 |
-| 길이 | 10.000초 | 10.000초 |
-| 프레임 | 24fps, 240 frames | 24fps, 240 frames |
-| 영상 및 오디오 | H.264, AAC 48 kHz 스테레오 | H.264, AAC 48 kHz 스테레오 |
-| 브랜드 노출 | 00:06.958–00:10.000 | 00:06.958–00:10.000 |
-| AAC 스트림 | 470패킷 | 470패킷, 가로본과 동일 |
+<table>
+  <thead>
+    <tr><th scope="col">항목</th><th scope="col">가로 본편</th><th scope="col">세로본</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>파일</td><td>ΕΠΟΣ_광고.mp4</td><td>bonus/ΕΠΟΣ_세로.mp4</td></tr>
+    <tr><td>화면 비율 및 해상도</td><td>16:9, 1280×720</td><td>9:16, 720×1280</td></tr>
+    <tr><td>길이</td><td>10.000초</td><td>10.000초</td></tr>
+    <tr><td>프레임</td><td>24fps, 240 frames</td><td>24fps, 240 frames</td></tr>
+    <tr><td>영상 및 오디오 포맷</td><td colspan="2" align="center">H.264,&nbsp;AAC&nbsp;48&nbsp;kHz&nbsp;Stereo</td></tr>
+    <tr><td>브랜드 노출</td><td>00:06.958–00:10.000</td><td>00:06.958–00:10.000</td></tr>
+    <tr><td>AAC stream</td><td colspan="2" align="center">470&nbsp;packets</td></tr>
+  </tbody>
+</table>
 
 ## Credits and Usage
 
@@ -178,7 +185,7 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 
 ## 실제 프롬프트
 
-### V01
+#### V01
 
 <details>
 <summary>영상 생성: Cut 01 v1</summary>
@@ -189,7 +196,7 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 
 </details>
 
-### V02
+#### V02
 
 <details>
 <summary>영상 생성: Cut 01 v2에 도약 조건 추가</summary>
@@ -200,7 +207,7 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 
 </details>
 
-### V03
+#### V03
 
 <details>
 <summary>영상 생성: 세 유적을 한 번에 요청한 프롬프트</summary>
@@ -215,7 +222,7 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 
 </details>
 
-### V04
+#### V04
 
 <details>
 <summary>영상 생성: 수니온 영상을 얻은 한국어 요청</summary>
@@ -226,7 +233,7 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 
 </details>
 
-### V05
+#### V05
 
 <details>
 <summary>영상 생성: 오류가 난 수니온 영어 요청</summary>
@@ -244,7 +251,7 @@ Generate one 4-second landscape video, 16:9, in a photoreal live-action cinemati
 
 </details>
 
-### I01
+#### I01
 
 <details>
 <summary>이미지 생성: 청동상 원화</summary>
@@ -262,7 +269,7 @@ Use case: historical-scene. Generate ONE new landscape 3:2 high-resolution produ
 
 </details>
 
-### I02
+#### I02
 
 <details>
 <summary>이미지 생성: 올리브 원화</summary>
@@ -280,7 +287,7 @@ Optical macro photograph of one slender olive twig on the Greek coast. A few lon
 
 </details>
 
-### A01
+#### A01
 
 <details>
 <summary>음성 생성: 그리스어 내레이션의 첫 구절</summary>
@@ -291,7 +298,7 @@ Optical macro photograph of one slender olive twig on the Greek coast. A few lon
 
 </details>
 
-### A02
+#### A02
 
 <details>
 <summary>음성 생성: 그리스어 내레이션의 둘째 구절</summary>
@@ -302,7 +309,7 @@ Optical macro photograph of one slender olive twig on the Greek coast. A few lon
 
 </details>
 
-### A03
+#### A03
 
 <details>
 <summary>음성 생성: 마지막 “에포스”를 발췌한 전체 테이크</summary>
@@ -313,7 +320,7 @@ Optical macro photograph of one slender olive twig on the Greek coast. A few lon
 
 </details>
 
-### T01
+#### T01
 
 <details>
 <summary>텍스트 생성: 이전 버전에서 화면 문구와 발화를 정할 때 쓴 입력</summary>
