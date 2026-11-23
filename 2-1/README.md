@@ -190,9 +190,9 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 <details>
 <summary>영상 생성: Cut 01 v1</summary>
 
-```text
-고대 그리스 신화를 따라 들어가는 가로 여행 광고의 첫 장면을, 컷 없이 이어지는 실사풍 동영상 한 편으로 만들어 줘. 낮은 카메라 앞에서 가죽 샌들을 신은 성인 여행자의 발 한쪽이 거친 석회암을 한 번 단단히 디디고 앞꿈치로 땅을 민다. 그 순간 카메라가 즉시 뒤로 빠져 인물의 등을 잠깐 스치고, 그 등에서 아이보리색 깃털 날개 한 쌍이 한 번 펼쳐진다. 바로 이어 가까운 암반이 빠르게 화면 옆으로 지나가며, 멀리 아티카 반도의 실제 같은 낮은 능선과 푸른 에게해의 큰 원경이 드러난다. 날개가 열린 뒤에는 인물보다 해안이 화면을 차지한다. 오후의 자연스러운 옆빛, 바위의 질감과 수평선의 거리감을 살려 실제 영화 카메라로 움직인 듯하게. 발이 두 번 반복해서 나오거나 카메라가 끊기거나 인물 얼굴이 보이지 않게. 화면 글자, 현대 소품, 음악은 넣지 마.
-```
+**[원문 (.txt)](prompts/V01.txt)**
+
+<p>고대 그리스 신화를 따라 들어가는 가로 여행 광고의 첫 장면을, 컷 없이 이어지는 실사풍 동영상 한 편으로 만들어 줘. 낮은 카메라 앞에서 가죽 샌들을 신은 성인 여행자의 발 한쪽이 거친 석회암을 한 번 단단히 디디고 앞꿈치로 땅을 민다. 그 순간 카메라가 즉시 뒤로 빠져 인물의 등을 잠깐 스치고, 그 등에서 아이보리색 깃털 날개 한 쌍이 한 번 펼쳐진다. 바로 이어 가까운 암반이 빠르게 화면 옆으로 지나가며, 멀리 아티카 반도의 실제 같은 낮은 능선과 푸른 에게해의 큰 원경이 드러난다. 날개가 열린 뒤에는 인물보다 해안이 화면을 차지한다. 오후의 자연스러운 옆빛, 바위의 질감과 수평선의 거리감을 살려 실제 영화 카메라로 움직인 듯하게. 발이 두 번 반복해서 나오거나 카메라가 끊기거나 인물 얼굴이 보이지 않게. 화면 글자, 현대 소품, 음악은 넣지 마.</p>
 
 </details>
 
@@ -201,9 +201,9 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 <details>
 <summary>영상 생성: Cut 01 v2에 도약 조건 추가</summary>
 
-```text
-고대 그리스 신화를 따라 들어가는 가로 여행 광고의 첫 장면을, 컷 없이 이어지는 실사풍 동영상 한 편으로 만들어 줘. 낮은 카메라 앞에서 가죽 샌들을 신은 성인 여행자의 발 한쪽이 거친 석회암을 한 번 단단히 디디고 앞꿈치로 땅을 민다. 이때 양발이 모두 바위턱을 벗어나고, 등에서 날개가 펴지는 동안 인물은 바다 쪽으로 계속 전진해 두 발과 뒤쪽 바위턱 사이로 물이 보이는 간격이 넓어진다. 그 순간 카메라가 즉시 뒤로 빠져 인물의 등을 잠깐 스치고, 그 등에서 아이보리색 깃털 날개 한 쌍이 한 번 펼쳐진다. 바로 이어 가까운 암반이 빠르게 화면 옆으로 지나가며, 멀리 아티카 반도의 실제 같은 낮은 능선과 푸른 에게해의 큰 원경이 드러난다. 날개가 열린 뒤에는 인물보다 해안이 화면을 차지한다. 오후의 자연스러운 옆빛, 바위의 질감과 수평선의 거리감을 살려 실제 영화 카메라로 움직인 듯하게. 발이 두 번 반복해서 나오거나 카메라가 끊기거나 인물 얼굴이 보이지 않게. 화면 글자, 현대 소품, 음악은 넣지 마.
-```
+**[원문 (.txt)](prompts/V02.txt)**
+
+<p>고대 그리스 신화를 따라 들어가는 가로 여행 광고의 첫 장면을, 컷 없이 이어지는 실사풍 동영상 한 편으로 만들어 줘. 낮은 카메라 앞에서 가죽 샌들을 신은 성인 여행자의 발 한쪽이 거친 석회암을 한 번 단단히 디디고 앞꿈치로 땅을 민다. 이때 양발이 모두 바위턱을 벗어나고, 등에서 날개가 펴지는 동안 인물은 바다 쪽으로 계속 전진해 두 발과 뒤쪽 바위턱 사이로 물이 보이는 간격이 넓어진다. 그 순간 카메라가 즉시 뒤로 빠져 인물의 등을 잠깐 스치고, 그 등에서 아이보리색 깃털 날개 한 쌍이 한 번 펼쳐진다. 바로 이어 가까운 암반이 빠르게 화면 옆으로 지나가며, 멀리 아티카 반도의 실제 같은 낮은 능선과 푸른 에게해의 큰 원경이 드러난다. 날개가 열린 뒤에는 인물보다 해안이 화면을 차지한다. 오후의 자연스러운 옆빛, 바위의 질감과 수평선의 거리감을 살려 실제 영화 카메라로 움직인 듯하게. 발이 두 번 반복해서 나오거나 카메라가 끊기거나 인물 얼굴이 보이지 않게. 화면 글자, 현대 소품, 음악은 넣지 마.</p>
 
 </details>
 
@@ -212,13 +212,13 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 <details>
 <summary>영상 생성: 세 유적을 한 번에 요청한 프롬프트</summary>
 
-```text
-16:9 가로 여행 광고 편집용 10초 동영상. 실제 고대 그리스 유적을 찾아가고 싶게 만드는, 살아 움직이는 실사풍 촬영 소스만. 서로 다른 세 장소의 세 쇼트를 순서대로 담고 장면 사이에는 눈에 띄는 하드 컷만 두세요. 한 장소 안에서 세 장면을 이어 본 것처럼 보이면 안 됩니다.
-0–3초: 토리코스 고대 극장. 낮은 황토색 석회암 객석의 한 줄을 따라 왼쪽에서 오른쪽으로 짧게 이동하며, 정반원이 아닌 길쭉하고 한쪽이 각져 꺾인 객석 전체와 뒤편 낮은 아티카 해안이 열린다. 꺾이는 객석 끝이 화면 중앙보다 조금 오른쪽에 남는다.
-3–6초: 델포이 아폴론 성역. 앞 돌길의 대각선 끝에서 시작해 짧게 전진하며, 산비탈을 따라 층층이 놓인 유적과 파르나소스 산의 거대한 회색 암벽을 함께 드러낸다. 여행자가 실제로 볼 수 있는 유적의 현재 모습으로, 지붕 있는 상상 신전 대신 낮은 돌기단과 남은 기둥만. 산 속 약간 높은 앵글로 바다 없이.
-6–10초: 미케네 사자의 문. 미케네의 거대한 불규칙한 돌을 쌓은 성벽 사이로 비스듬히 전진하다가 짙고 각진 사각 입구와 커다란 돌 인방이 화면 정면에 드러난다. 인방 위 돌 삼각형에 중앙 기둥과 마주 보는 두 머리 없는 사자 부조가 있다. 사자 부조를 중앙보다 약간 오른쪽에 두고 실제 유적의 거칠고 무거운 돌 감촉을 살린다. 로마식 둥근 아치, 살아 움직이는 사자, 가상의 건물은 없다.
-세 장소가 한눈에 다른 실루엣. 돌·빛·관성은 실제 영화 카메라처럼. 화면 글자, 로고, 내레이션, 음악, 전경 인물, 몬스터, 날개, 변신, 장면 모핑, 디졸브, 정지 이미지 패닝은 넣지 마세요.
-```
+**[원문 (.txt)](prompts/V03.txt)**
+
+<p>16:9 가로 여행 광고 편집용 10초 동영상. 실제 고대 그리스 유적을 찾아가고 싶게 만드는, 살아 움직이는 실사풍 촬영 소스만. 서로 다른 세 장소의 세 쇼트를 순서대로 담고 장면 사이에는 눈에 띄는 하드 컷만 두세요. 한 장소 안에서 세 장면을 이어 본 것처럼 보이면 안 됩니다.<br>
+0–3초: 토리코스 고대 극장. 낮은 황토색 석회암 객석의 한 줄을 따라 왼쪽에서 오른쪽으로 짧게 이동하며, 정반원이 아닌 길쭉하고 한쪽이 각져 꺾인 객석 전체와 뒤편 낮은 아티카 해안이 열린다. 꺾이는 객석 끝이 화면 중앙보다 조금 오른쪽에 남는다.<br>
+3–6초: 델포이 아폴론 성역. 앞 돌길의 대각선 끝에서 시작해 짧게 전진하며, 산비탈을 따라 층층이 놓인 유적과 파르나소스 산의 거대한 회색 암벽을 함께 드러낸다. 여행자가 실제로 볼 수 있는 유적의 현재 모습으로, 지붕 있는 상상 신전 대신 낮은 돌기단과 남은 기둥만. 산 속 약간 높은 앵글로 바다 없이.<br>
+6–10초: 미케네 사자의 문. 미케네의 거대한 불규칙한 돌을 쌓은 성벽 사이로 비스듬히 전진하다가 짙고 각진 사각 입구와 커다란 돌 인방이 화면 정면에 드러난다. 인방 위 돌 삼각형에 중앙 기둥과 마주 보는 두 머리 없는 사자 부조가 있다. 사자 부조를 중앙보다 약간 오른쪽에 두고 실제 유적의 거칠고 무거운 돌 감촉을 살린다. 로마식 둥근 아치, 살아 움직이는 사자, 가상의 건물은 없다.<br>
+세 장소가 한눈에 다른 실루엣. 돌·빛·관성은 실제 영화 카메라처럼. 화면 글자, 로고, 내레이션, 음악, 전경 인물, 몬스터, 날개, 변신, 장면 모핑, 디졸브, 정지 이미지 패닝은 넣지 마세요.</p>
 
 </details>
 
@@ -227,9 +227,9 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 <details>
 <summary>영상 생성: 수니온 영상을 얻은 한국어 요청</summary>
 
-```text
-해 질 무렵 에게해 풍경을 가로 동영상 한 편으로 만들어 줘. 고정된 카메라 앞에서 파도 한 줄이 옅은 석회암 절벽에 닿는다. 절벽 위에는 고대 그리스 도리아식 신전이 서 있다. 실제 카메라로 촬영한 듯한 자연스러운 빛과 바다의 움직임.
-```
+**[원문 (.txt)](prompts/V04.txt)**
+
+<p>해 질 무렵 에게해 풍경을 가로 동영상 한 편으로 만들어 줘. 고정된 카메라 앞에서 파도 한 줄이 옅은 석회암 절벽에 닿는다. 절벽 위에는 고대 그리스 도리아식 신전이 서 있다. 실제 카메라로 촬영한 듯한 자연스러운 빛과 바다의 움직임.</p>
 
 </details>
 
@@ -238,9 +238,9 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 <details>
 <summary>영상 생성: 오류가 난 수니온 영어 요청</summary>
 
-```text
-Generate one 4-second landscape video, 16:9, in a photoreal live-action cinematic style. A locked wide camera just above the Aegean looks toward the limestone headland at Cape Sounion at dusk. One wave reaches the cliffs. The intact Classical Greek Temple of Poseidon sits on the upper right with a tiled roof and a long Doric colonnade. Keep the uninterrupted dark blue water in the lower half clear, and hold the architecture steady. Low warm sunlight on textured stone. No people, writing, graphics, or music.
-```
+**[원문 (.txt)](prompts/V05.txt)**
+
+<p>Generate one 4-second landscape video, 16:9, in a photoreal live-action cinematic style. A locked wide camera just above the Aegean looks toward the limestone headland at Cape Sounion at dusk. One wave reaches the cliffs. The intact Classical Greek Temple of Poseidon sits on the upper right with a tiled roof and a long Doric colonnade. Keep the uninterrupted dark blue water in the lower half clear, and hold the architecture steady. Low warm sunlight on textured stone. No people, writing, graphics, or music.</p>
 
 <details>
 <summary>한국어 해석 (참고용)</summary>
@@ -256,9 +256,9 @@ Generate one 4-second landscape video, 16:9, in a photoreal live-action cinemati
 <details>
 <summary>이미지 생성: 청동상 원화</summary>
 
-```text
-Use case: historical-scene. Generate ONE new landscape 3:2 high-resolution production photograph to serve as the plate for a half-second editorial camera rise in a premium travel film about ancient Greece. A clearly inanimate, original imagined ancient Greek bronze statue (not a named or identifiable artifact) of a helmeted young adult warrior. Oblique three-quarter side-light. Composition is very deliberate: statue's sculptural face has readable nose, eye and helmet at x=56%, y=25%; the cast bronze right hand is unmistakably gripping a long plain ancient spear shaft at x=45%, y=66%; the spear runs obliquely from bottom left into upper middle but crosses neither the face nor the eyes. Both face and hand must be fully present, near the central strip of the image so that moving crops read in both 16:9 and vertical. Medium-tight photograph contains the sculpture from helmet crest to mid torso, no whole-body statue. Strong, finely detailed hands and face: no melted fingers, no skin, no expression that looks alive. Worn deep green-black patina and burnished bronze glints. Warm low late-afternoon Mediterranean sunlight rakes from upper right matching a limestone cliff at sunset, blurred cool slate-blue shadow and quiet limestone behind. Tonal contrast like a RED cinema-camera close-up, tactile and restrained, realistic highlight rolloff, barely any visible museum or location. No red backdrop, no heroic fantasy or combat, no CGI gloss, no text, no emblems, nobody else. This is an original sculpture concept; do not recreate any existing reference photograph.
-```
+**[원문 (.txt)](prompts/I01.txt)**
+
+<p>Use case: historical-scene. Generate ONE new landscape 3:2 high-resolution production photograph to serve as the plate for a half-second editorial camera rise in a premium travel film about ancient Greece. A clearly inanimate, original imagined ancient Greek bronze statue (not a named or identifiable artifact) of a helmeted young adult warrior. Oblique three-quarter side-light. Composition is very deliberate: statue's sculptural face has readable nose, eye and helmet at x=56%, y=25%; the cast bronze right hand is unmistakably gripping a long plain ancient spear shaft at x=45%, y=66%; the spear runs obliquely from bottom left into upper middle but crosses neither the face nor the eyes. Both face and hand must be fully present, near the central strip of the image so that moving crops read in both 16:9 and vertical. Medium-tight photograph contains the sculpture from helmet crest to mid torso, no whole-body statue. Strong, finely detailed hands and face: no melted fingers, no skin, no expression that looks alive. Worn deep green-black patina and burnished bronze glints. Warm low late-afternoon Mediterranean sunlight rakes from upper right matching a limestone cliff at sunset, blurred cool slate-blue shadow and quiet limestone behind. Tonal contrast like a RED cinema-camera close-up, tactile and restrained, realistic highlight rolloff, barely any visible museum or location. No red backdrop, no heroic fantasy or combat, no CGI gloss, no text, no emblems, nobody else. This is an original sculpture concept; do not recreate any existing reference photograph.</p>
 
 <details>
 <summary>한국어 해석 (참고용)</summary>
@@ -274,9 +274,9 @@ Use case: historical-scene. Generate ONE new landscape 3:2 high-resolution produ
 <details>
 <summary>이미지 생성: 올리브 원화</summary>
 
-```text
-Optical macro photograph of one slender olive twig on the Greek coast. A few long narrow dusty grey-green olive leaves, sage silver undersides and visible veins. Low white sun peeks through two overlapping leaves near upper right, producing a small, real warm lens flare over distant turquoise sea. Wind lifts the pointed leaf ends, gentle depth of field and natural tones. No fruit, no writing, no diagram.
-```
+**[원문 (.txt)](prompts/I02.txt)**
+
+<p>Optical macro photograph of one slender olive twig on the Greek coast. A few long narrow dusty grey-green olive leaves, sage silver undersides and visible veins. Low white sun peeks through two overlapping leaves near upper right, producing a small, real warm lens flare over distant turquoise sea. Wind lifts the pointed leaf ends, gentle depth of field and natural tones. No fruit, no writing, no diagram.</p>
 
 <details>
 <summary>한국어 해석 (참고용)</summary>
@@ -292,9 +292,9 @@ Optical macro photograph of one slender olive twig on the Greek coast. A few lon
 <details>
 <summary>음성 생성: 그리스어 내레이션의 첫 구절</summary>
 
-```text
-Για να γράψεις τη δική σου ιστορία.
-```
+**[원문 (.txt)](prompts/A01.txt)**
+
+<p>Για να γράψεις τη δική σου ιστορία.</p>
 
 </details>
 
@@ -303,9 +303,9 @@ Optical macro photograph of one slender olive twig on the Greek coast. A few lon
 <details>
 <summary>음성 생성: 그리스어 내레이션의 둘째 구절</summary>
 
-```text
-Ένα ταξίδι στην Ελλάδα.
-```
+**[원문 (.txt)](prompts/A02.txt)**
+
+<p>Ένα ταξίδι στην Ελλάδα.</p>
 
 </details>
 
@@ -314,9 +314,9 @@ Optical macro photograph of one slender olive twig on the Greek coast. A few lon
 <details>
 <summary>음성 생성: 마지막 “에포스”를 발췌한 전체 테이크</summary>
 
-```text
-Γράψε το έπος σου στην Ελλάδα. Έπος.
-```
+**[원문 (.txt)](prompts/A03.txt)**
+
+<p>Γράψε το έπος σου στην Ελλάδα. Έπος.</p>
 
 </details>
 
@@ -325,10 +325,10 @@ Optical macro photograph of one slender olive twig on the Greek coast. A few lon
 <details>
 <summary>텍스트 생성: 이전 버전에서 화면 문구와 발화를 정할 때 쓴 입력</summary>
 
-```text
-화면전체가로가 이러면
-|     나만의 서사를 쓰는                    그리스 여행     |  이렇게 촥촥 나만의 서사를 쓰는 1번 그리스여행 2번으로 뜨고 화면 꽉체우게 에포스 뜨면안돼? 저 로고?  로고 꽉차는건 이정도 이상을 상상했어 지금도 별로 눈에 띄진않잖아 내가 준레퍼도
-```
+**[원문 (.txt)](prompts/T01.txt)**
+
+<p>화면전체가로가 이러면<br>
+|     나만의 서사를 쓰는                    그리스 여행     |  이렇게 촥촥 나만의 서사를 쓰는 1번 그리스여행 2번으로 뜨고 화면 꽉체우게 에포스 뜨면안돼? 저 로고?  로고 꽉차는건 이정도 이상을 상상했어 지금도 별로 눈에 띄진않잖아 내가 준레퍼도</p>
 
 </details>
 
