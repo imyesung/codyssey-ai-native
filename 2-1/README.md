@@ -10,12 +10,16 @@ https://github.com/user-attachments/assets/e4713687-3120-4993-8d30-b76681030b91
 
 https://github.com/user-attachments/assets/ae2afcd8-8f46-401d-9403-5a33549ed19b
 
-## 서비스 정체성
+<a name="서비스-정체성"></a>
+
+## 서비스 아이덴티티
+
+<sub>[서비스 정체성]</sub>
 
 $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 따라 실제 유적을 여행하는 코스를 추천하는 웹서비스다.
 
 - **대상 고객:** 그리스 신화에 관심이 있고, 이야기 속 유적을 어디부터 돌아볼지 정하려는 여행자
-- **차별점(USP):** 명소의 인기 순위보다 신화 속 이야기의 흐름을 기준으로 유적을 고르고 방문 순서를 제안한다.
+- **USP (Unique Selling Proposition):** 명소의 인기 순위보다 신화 속 이야기의 흐름을 기준으로 유적을 고르고 방문 순서를 제안한다.
 - **캠페인 목표(인지):** 광고를 본 사람이 “에포스는 그리스 신화 속 유적을 따라 걷는 여행 코스를 추천한다”고 설명할 수 있게 한다.
 - **핵심 문구:** 나만의 서사시를 쓰는 그리스 여행.
 - **화면 연출:** 신화를 판타지 장면으로 재현하기보다 여행자가 볼 만한 풍경을 실사풍으로 담았다. 돌을 딛는 샌들과 청동상의 손을 가까이서 보여 주고, 마지막에는 수니온의 신전과 바다를 한 화면에 담는다.
@@ -23,10 +27,12 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 
 ## 결과물
 
+제출물: 10초 광고 본편 및 스토리보드. 세로본은 화면 비율 비교용이며, 별도 상영본은 슬레이트와 크레딧을 포함한 관람용이다.
+
 | 용도 | 파일 | 규격 |
 |---|---|---|
 | 광고 본편 | [ΕΠΟΣ_광고.mp4](ΕΠΟΣ_광고.mp4) | 1280×720, 10.000초, 24fps, 240 frames |
-| 스토리보드 | [ΕΠΟΣ_스토리보드.pdf](ΕΠΟΣ_스토리보드.pdf) | 서비스 정체성, 컷별 10개 항목, 수정 기록 |
+| 스토리보드 | [ΕΠΟΣ_스토리보드.pdf](ΕΠΟΣ_스토리보드.pdf) | 서비스 아이덴티티, 컷별 10개 항목, 수정 기록 |
 | 세로본 | [ΕΠΟΣ_세로.mp4](bonus/ΕΠΟΣ_세로.mp4) | 720×1280, 10.000초, 24fps, 240 frames |
 | 별도 상영본 | [슬레이트와 크레딧 포함 MP4](bonus/EPOS_PICTURELOCK_SCREENING_CREDITS.mp4) | 1280×720, 12.042초, 289 frames |
 
@@ -129,6 +135,18 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 
 ![같은 시점의 수니온. 가로본에서는 수평선이 길게 보이고, 세로본에서는 위아래로 화면이 열리며 신전과 포말 사이에 로고가 뜬다.](assets/cut06-wide-vertical.gif)
 
+#### 가로 본편과 세로본 대조
+
+| 항목 | 가로 본편 | 세로본 |
+|---|---|---|
+| 파일 | ΕΠΟΣ_광고.mp4 | bonus/ΕΠΟΣ_세로.mp4 |
+| 화면 비율 및 해상도 | 16:9, 1280×720 | 9:16, 720×1280 |
+| 길이 | 10.000초 | 10.000초 |
+| 프레임 | 24fps, 240 frames | 24fps, 240 frames |
+| 영상 및 오디오 | H.264, AAC 48 kHz 스테레오 | H.264, AAC 48 kHz 스테레오 |
+| 브랜드 노출 | 00:06.958–00:10.000 | 00:06.958–00:10.000 |
+| AAC 스트림 | 470패킷 | 470패킷, 가로본과 동일 |
+
 ## Credits and Usage
 
 **기획, 제작, 연출:** Yesung Lim, ChatGPT dots Zelda
@@ -154,7 +172,7 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 **출처와 이용 범위**
 
 - **카피:** 스토리보드 15쪽에는 장면 목표와 여행 카피를 다듬은 도구로 Codex가 기록돼 있다. 최종 한글 자막에는 제작자의 수정본을 반영했다.
-- **영상:** 직접 촬영한 영상이나 유료 스톡 대신 생성 소재를 썼다. Gemini 표기는 편집했으며, 표기가 남아 있는 생성 원본과 출처 기록은 보존했다. 성공한 생성본은 세부 모델 ID 대신 도구명 Gemini로 표기했다. COPA 호출은 오류로 끝났다.
+- **영상:** 직접 촬영한 영상이나 유료 스톡 대신 생성 소재를 썼다. Gemini 표기는 편집했으며, 표기가 남아 있는 생성 원본과 출처 기록은 보존했다. 성공한 생성본은 세부 모델 ID 대신 도구명 Gemini로 표기했다. COPA 호출은 오류로 끝났다. 네이토, Flow, LTX에서는 편집에 쓸 결과물을 확보하지 못했다.
 - **음성:** Myned AI와 Kyutai의 Pocket TTS Greek 모델을 사용했다. 모델 라이선스는 CC BY 4.0이다.
 - **음악:** 이 영상은 비상업 학습용으로 제작했다. 곡의 사용 범위는 [Suno의 비상업 이용 안내](https://help.suno.com/en/articles/9601601)와 [스토리보드 15쪽](ΕΠΟΣ_스토리보드.pdf#page=15)에 기록했다.
 
@@ -217,6 +235,13 @@ $\text{ΕΠΟΣ}$(에포스)는 그리스 신화에 등장하는 이야기를 �
 Generate one 4-second landscape video, 16:9, in a photoreal live-action cinematic style. A locked wide camera just above the Aegean looks toward the limestone headland at Cape Sounion at dusk. One wave reaches the cliffs. The intact Classical Greek Temple of Poseidon sits on the upper right with a tiled roof and a long Doric colonnade. Keep the uninterrupted dark blue water in the lower half clear, and hold the architecture steady. Low warm sunlight on textured stone. No people, writing, graphics, or music.
 ```
 
+<details>
+<summary>한국어 해석 (참고용)</summary>
+
+16:9 가로 화면의 4초 영상 한 편을 실사 영화처럼 만들어 줘. 에게해 수면 바로 위에 고정한 광각 카메라가 해 질 무렵 수니온 곶의 석회암 돌출부를 바라본다. 파도 한 줄이 절벽에 닿는다. 화면 오른쪽 위에는 기와지붕과 길게 늘어선 도리아식 열주를 갖춘 고전기 그리스의 포세이돈 신전이 온전한 모습으로 서 있다. 화면 아래 절반의 짙푸른 바다를 가리는 요소 없이 유지하고, 건축물이 흔들리지 않게 해 줘. 낮게 드는 따뜻한 햇살이 돌의 질감을 비춘다. 인물, 글자, 그래픽, 음악은 넣지 마.
+
+</details>
+
 </details>
 
 ### I01
@@ -228,6 +253,13 @@ Generate one 4-second landscape video, 16:9, in a photoreal live-action cinemati
 Use case: historical-scene. Generate ONE new landscape 3:2 high-resolution production photograph to serve as the plate for a half-second editorial camera rise in a premium travel film about ancient Greece. A clearly inanimate, original imagined ancient Greek bronze statue (not a named or identifiable artifact) of a helmeted young adult warrior. Oblique three-quarter side-light. Composition is very deliberate: statue's sculptural face has readable nose, eye and helmet at x=56%, y=25%; the cast bronze right hand is unmistakably gripping a long plain ancient spear shaft at x=45%, y=66%; the spear runs obliquely from bottom left into upper middle but crosses neither the face nor the eyes. Both face and hand must be fully present, near the central strip of the image so that moving crops read in both 16:9 and vertical. Medium-tight photograph contains the sculpture from helmet crest to mid torso, no whole-body statue. Strong, finely detailed hands and face: no melted fingers, no skin, no expression that looks alive. Worn deep green-black patina and burnished bronze glints. Warm low late-afternoon Mediterranean sunlight rakes from upper right matching a limestone cliff at sunset, blurred cool slate-blue shadow and quiet limestone behind. Tonal contrast like a RED cinema-camera close-up, tactile and restrained, realistic highlight rolloff, barely any visible museum or location. No red backdrop, no heroic fantasy or combat, no CGI gloss, no text, no emblems, nobody else. This is an original sculpture concept; do not recreate any existing reference photograph.
 ```
 
+<details>
+<summary>한국어 해석 (참고용)</summary>
+
+용도: 역사 장면. 고대 그리스를 다룬 고급 여행 영상에서 편집으로 카메라를 반초 동안 위로 움직이는 데 쓸 원판으로, 3:2 가로 비율의 고해상도 제작용 사진 한 장을 새로 만들어 줘. 투구를 쓴 젊은 성인 전사의 고대 그리스 청동상으로, 살아 있지 않은 조각상임이 분명해야 한다. 이름이 있거나 식별 가능한 유물이 아닌, 새로 상상한 조각상이다. 옆에서 비스듬히 비추는 3분의 4 방향 조명. 구도는 정확해야 한다. 조각상의 코와 눈, 투구가 x=56%, y=25% 지점에서 분명히 보여야 한다. 주조한 청동 오른손은 x=45%, y=66% 지점에서 장식 없는 긴 고대 창대를 확실히 쥔다. 창은 왼쪽 아래에서 위쪽 중앙으로 비스듬히 뻗되 얼굴이나 눈을 가로지르지 않는다. 얼굴과 손은 모두 온전히 보이고 화면 중앙 세로 띠 가까이에 있어야 한다. 그래야 크롭 위치를 옮겨도 16:9와 세로 화면 모두에서 알아볼 수 있다. 투구 볏에서 몸통 중간까지 담는 다소 타이트한 사진으로, 전신상은 보이지 않는다. 손과 얼굴의 형태는 선명하고 세밀해야 한다. 손가락이 녹아 붙은 듯 보이거나 피부가 드러나거나 살아 있는 듯한 표정은 없어야 한다. 짙은 녹흑색 녹청은 닳아 있고, 윤이 난 청동은 빛을 반사한다. 해 질 무렵 석회암 절벽에 드는 빛처럼, 늦은 오후 지중해의 따뜻하고 낮은 햇살이 오른쪽 위에서 표면을 스친다. 뒤쪽에는 흐릿하고 서늘한 슬레이트 블루 그림자와 차분한 석회암이 있다. RED 영화 카메라의 클로즈업 같은 명암 대비. 재질의 촉감을 살리되 과하지 않게 하고, 밝은 부분의 계조는 실제처럼 부드럽게 이어지게 한다. 박물관이나 촬영 장소임을 짐작할 만한 요소는 거의 보이지 않는다. 붉은 배경, 영웅 판타지나 전투, CGI 같은 번들거림, 글자, 상징 표식, 다른 인물은 넣지 마. 새로 만든 조각상 콘셉트이므로 기존 레퍼런스 사진을 재현하지 마.
+
+</details>
+
 </details>
 
 ### I02
@@ -238,6 +270,13 @@ Use case: historical-scene. Generate ONE new landscape 3:2 high-resolution produ
 ```text
 Optical macro photograph of one slender olive twig on the Greek coast. A few long narrow dusty grey-green olive leaves, sage silver undersides and visible veins. Low white sun peeks through two overlapping leaves near upper right, producing a small, real warm lens flare over distant turquoise sea. Wind lifts the pointed leaf ends, gentle depth of field and natural tones. No fruit, no writing, no diagram.
 ```
+
+<details>
+<summary>한국어 해석 (참고용)</summary>
+
+그리스 해안의 가느다란 올리브 가지 하나를 광학 매크로 사진으로 담아 줘. 길고 좁은 잎 몇 장은 탁한 회녹색이고, 뒷면은 세이지빛이 도는 은색이며 잎맥이 보인다. 화면 오른쪽 위에서 겹친 잎 두 장 사이로 낮은 흰 해가 내다보이고, 멀리 보이는 청록색 바다 위로 작고 자연스러운 따뜻한 렌즈 플레어가 생긴다. 바람이 뾰족한 잎 끝을 들어 올린다. 심도는 부드럽게, 색감은 자연스럽게. 열매, 글자, 도식은 넣지 마.
+
+</details>
 
 </details>
 
@@ -302,7 +341,7 @@ Optical macro photograph of one slender olive twig on the Greek coast. A few lon
 
 ## 파일 검증
 
-| 원본 MP4 | SHA-256 |
+| File | SHA-256 |
 |---|---|
 | ΕΠΟΣ_광고.mp4 | `437e0e20fa312670d1ab505a0696e12280404b72326df8f503d753c3ef6c5b14` |
 | bonus/ΕΠΟΣ_세로.mp4 | `65fbad57ad9ef6827456e508446ec865765694524b1a418b8a4e7502b2739324` |
