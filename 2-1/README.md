@@ -4,13 +4,13 @@
 
 **상영본** (16:9, 슬레이트와 크레딧 포함)
 
-https://github.com/user-attachments/assets/e4713687-3120-4993-8d30-b76681030b91
+https://github.com/user-attachments/assets/c93a3d3e-e6a2-47e5-8350-70b4d71e8751
 
 [상영본 MP4 열기](assets/EPOS_PICTURELOCK_SCREENING_CREDITS.mp4)
 
 **세로본** (9:16, 광고 본편 10초)
 
-https://github.com/user-attachments/assets/ae2afcd8-8f46-401d-9403-5a33549ed19b
+https://github.com/user-attachments/assets/3b82ae0d-891b-4b4f-9d64-9177f7fbacf1
 
 <a name="서비스-정체성"></a>
 
