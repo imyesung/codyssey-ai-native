@@ -368,16 +368,9 @@ https://github.com/user-attachments/assets/aa962283-ecbb-44d3-9d5b-6975f8fcfa7b
 
 </details>
 
-<details>
-<summary>상영본 (16:9, 슬레이트와 크레딧 포함)</summary>
+**크레딧 상영본** (16:9, 12.042초, 슬레이트와 크레딧 포함)
 
 https://github.com/user-attachments/assets/e65ae606-b35f-4a4b-a032-58e7fe743b2c
-
-</details>
-
-![얼굴 컷의 발화 프레임](bonus/01-lip-sync/EPOS_LIPSYNC_STILL.jpg)
-
-가로본 `00:06.750`. 발화 중에는 글자를 띄우지 않았다.
 
 기존 픽처락의 첫 프레임부터 청동상 컷 끝까지 그대로 두었다. 청동상과 노란 자막이 끝나는 프레임에서 바로 얼굴을 넣고, 기존 수니온의 파도와 제목으로 마친다. 새 얼굴을 기존 인물과 동일하다고 가정하지 않고 따로 검토했다. 네이토에서 생성한 얼굴 영상과 그 영상 속 낮은 여성 음성을 한 테이크로 사용했다. 입이나 턱만 따로 합성하던 R6와 달리, 발화 움직임과 원음의 시간 관계를 유지했다.
 
