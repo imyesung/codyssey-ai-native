@@ -136,13 +136,13 @@ https://github.com/user-attachments/assets/3b82ae0d-891b-4b4f-9d64-9177f7fbacf1
 
 - **v21: 화면 이동.** 한 장의 원화에서 잘라 보여 주는 영역을 손에서 얼굴 쪽으로 옮겼다. 손과 얼굴은 한 평면 위에서 함께 움직였다.
 - **v22: 깊이와 초점 이동.** 원화에 깊이 정보를 준 2.5D 무빙을 시험했다. 앞에 있는 손과 창대, 그 뒤의 얼굴 사이에 거리감을 만들고, 카메라가 올라가는 동안 어느 거리의 윤곽을 가장 선명하게 보여 줄지도 바꿨다.
-- **본편: 화살표를 따라가는 카메라.** 시작 구도는 v22의 `F111`을 기준으로 잡았다. 화면에 그린 빨간 화살표는 **손에서 출발 → 오른쪽으로 이동 → 눈을 향해 상승**하라는 편집 지시였다. v25에서는 v22와 달리 시작 프레임의 깊이 맵과 초점 설정을 고정했다. 가상 카메라를 오른쪽으로 183px, 위로 179px 옮기면서 상대 깊이에 따라 매 프레임 이미지를 재투영하고 흐림을 합성했다. 단순히 화면을 잘라 옮긴 것이 아니며, 초점 위치 자체는 이동시키지 않았다. 손에서 눈까지 속도가 부드럽게 이어지도록 조절했다. 아래는 이 무빙이 들어간 본편 `00:04.250` ~ `00:05.667`의 34 frames이다.
+- **본편(v25).** v22의 `F111`에서 출발해 창을 쥔 손에서 오른쪽을 거쳐 눈으로 올라간다. 깊이 맵과 초점은 고정했다. 가상 카메라를 오른쪽으로 183px, 위로 179px 옮기며 프레임마다 원화를 재투영하고 흐림을 합성했다.
 
-![손에서 오른쪽을 거쳐 눈으로 향하는 붉은 화살표](assets/storyboard/cut-05-camera-path.jpg)
+| 화살표 그림 | 실제 움짤 |
+| --- | --- |
+| ![손에서 눈으로 가는 카메라 경로를 표시한 붉은 화살표](assets/storyboard/cut-05-camera-path.jpg) | ![창을 쥔 손에서 눈까지 올라가는 본편 Cut 05](assets/cut05-hand-to-face.gif) |
 
-카메라 이동을 지정한 마크업. 붉은 선은 본편에 들어가지 않는다.
-
-![청동상의 손과 창대에서 투구 아래 얼굴까지 올라가는 본편 장면](assets/cut05-hand-to-face.gif)
+본편 `00:04.250` ~ `00:05.667`, 34 frames.
 
 #### Cut 06 수니온: 생성 요청과 화면 비율
 
@@ -360,6 +360,24 @@ https://github.com/user-attachments/assets/3b82ae0d-891b-4b4f-9d64-9177f7fbacf1
 <a id="bonus-01-lip-sync"></a>
 
 ### BONUS 01 | 생성 원음으로 맞춘 얼굴 컷
+
+**가로본** (16:9, 10초)
+
+https://github.com/user-attachments/assets/ef8c3251-b6a4-45c2-9979-eeb6b6d5b5e3
+
+<details>
+<summary>세로본 (9:16, 10초)</summary>
+
+https://github.com/user-attachments/assets/aa962283-ecbb-44d3-9d5b-6975f8fcfa7b
+
+</details>
+
+<details>
+<summary>상영본 (16:9, 슬레이트와 크레딧 포함)</summary>
+
+https://github.com/user-attachments/assets/e65ae606-b35f-4a4b-a032-58e7fe743b2c
+
+</details>
 
 ![얼굴 컷의 발화 프레임](bonus/01-lip-sync/EPOS_LIPSYNC_STILL.jpg)
 
