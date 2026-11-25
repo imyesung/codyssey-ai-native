@@ -138,9 +138,9 @@ https://github.com/user-attachments/assets/3b82ae0d-891b-4b4f-9d64-9177f7fbacf1
 - **v22: 깊이와 초점 이동.** 원화에 깊이 정보를 준 2.5D 무빙을 시험했다. 앞에 있는 손과 창대, 그 뒤의 얼굴 사이에 거리감을 만들고, 카메라가 올라가는 동안 어느 거리의 윤곽을 가장 선명하게 보여 줄지도 바꿨다.
 - **본편(v25).** v22의 `F111`에서 출발해 창을 쥔 손에서 오른쪽을 거쳐 눈으로 올라간다. 깊이 맵과 초점은 고정했다. 가상 카메라를 오른쪽으로 183px, 위로 179px 옮기며 프레임마다 원화를 재투영하고 흐림을 합성했다.
 
-| 화살표 그림 | 실제 움짤 |
+| 화살표 그림 | Cut Motion |
 | --- | --- |
-| ![손에서 눈으로 가는 카메라 경로를 표시한 붉은 화살표](assets/storyboard/cut-05-camera-path.jpg) | ![창을 쥔 손에서 눈까지 올라가는 본편 Cut 05](assets/cut05-hand-to-face.gif) |
+| <img src="assets/storyboard/cut-05-camera-path.jpg" width="440" alt="손에서 눈으로 올라가는 카메라 경로"> | <img src="assets/cut05-hand-to-face.gif" width="440" alt="창을 쥔 손에서 눈까지 올라가는 본편 Cut 05"> |
 
 본편 `00:04.250` ~ `00:05.667`, 34 frames.
 
