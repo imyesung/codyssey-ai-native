@@ -352,6 +352,7 @@ https://github.com/user-attachments/assets/c93a3d3e-e6a2-47e5-8350-70b4d71e8751
 | 01 | 입 모양과 대사 동기화 | [Omni 테이크의 화면과 원음 사용](#bonus-01-lip-sync). | ✓ |
 | 02 | 도구별 생성 결과 비교 | 비교본 X | |
 | 03 | 16:9와 9:16 비교 | [같은 프레임의 구도 비교](#bonus-03-aspect-ratio). | ✓ |
+| 04 | Apps Script에서 생성 API 호출 | [8초 영상 요청, 완료, 다운로드 및 실제 차감 기록](#bonus-04-apps-script). | ✓ |
 
 <a id="bonus-01-lip-sync"></a>
 
@@ -399,6 +400,23 @@ https://github.com/user-attachments/assets/e65ae606-b35f-4a4b-a032-58e7fe743b2c
 https://github.com/user-attachments/assets/3b82ae0d-891b-4b4f-9d64-9177f7fbacf1
 
 [세로본 MP4 열기](bonus/ΕΠΟΣ_세로.mp4) | [가로·세로 구도 비교](#가로-본편과-세로본-대조) | [스토리보드 22쪽](ΕΠΟΣ_스토리보드.pdf#page=22)
+
+<a id="bonus-04-apps-script"></a>
+
+### BONUS 04 | Apps Script 영상 생성
+
+새 얼굴 스틸에서 회청색 눈, 금빛 귀걸이, 늦은 오후 빛의 방향을 골랐다. Astra 6.2 Max로 이 특징을 프롬프트에 정리하고, 네이토에는 사진 대신 텍스트를 보냈다.
+
+Apps Script에서 Gemini Omni Flash에 8초 영상을 한 번 요청했다. 접수 응답에서 받은 작업 번호로 완료 상태를 조회한 뒤, 같은 작업의 MP4를 내려받았다. 이 영상은 API 호출 과정을 보여 주는 별도 결과물이다. 본편과 BONUS 01은 기존 편집을 유지했다.
+
+| 단계 | 결과 |
+|---|---|
+| 요청 | `HTTP 202`, 작업 번호 `vjob_3…8343` |
+| 완료 | 같은 작업 `HTTP 200`, `completed` |
+| 다운로드 | [8초 MP4](bonus/04-apps-script/EPOS_BONUS-04_OMNI_8S.mp4), 1280×720, 192 frames, AAC 스테레오 |
+| 실제 차감 | 네이토 사용량 기준 요청 1회, 192,000토큰 |
+
+[참고 스틸](bonus/04-apps-script/reference.png) | [프롬프트](bonus/04-apps-script/prompt.txt) | [Apps Script](bonus/04-apps-script/EPOS_Bonus04_8s.gs) | [실행 기록](bonus/04-apps-script/run-record.md) | [스토리보드 25쪽](ΕΠΟΣ_스토리보드.pdf#page=25)
 
 ## 파일 검증
 
