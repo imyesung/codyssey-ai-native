@@ -8,10 +8,6 @@ https://github.com/user-attachments/assets/c93a3d3e-e6a2-47e5-8350-70b4d71e8751
 
 [상영본 MP4 열기](assets/EPOS_PICTURELOCK_SCREENING_CREDITS.mp4)
 
-**세로본** (9:16, 광고 본편 10초)
-
-https://github.com/user-attachments/assets/3b82ae0d-891b-4b4f-9d64-9177f7fbacf1
-
 <a name="서비스-정체성"></a>
 
 ## 서비스 아이덴티티
@@ -355,7 +351,7 @@ https://github.com/user-attachments/assets/3b82ae0d-891b-4b4f-9d64-9177f7fbacf1
 |---|---|---|:---:|
 | 01 | 입 모양과 대사 동기화 | [Omni 테이크의 화면과 원음 사용](#bonus-01-lip-sync). | ✓ |
 | 02 | 도구별 생성 결과 비교 | 비교본 X | |
-| 03 | 16:9와 9:16 비교 | [같은 프레임의 구도 비교](ΕΠΟΣ_스토리보드.pdf#page=22). | ✓ |
+| 03 | 16:9와 9:16 비교 | [같은 프레임의 구도 비교](#bonus-03-aspect-ratio). | ✓ |
 
 <a id="bonus-01-lip-sync"></a>
 
@@ -400,6 +396,16 @@ https://github.com/user-attachments/assets/e65ae606-b35f-4a4b-a032-58e7fe743b2c
 - 청동상 `00:04.250–00:05.667` (34 frames), 얼굴 `00:05.667–00:07.625`, 수니온 파도 `00:07.625–00:10.000`, 제목 `00:08.125–00:10.000`. 여자 얼굴은 자막 직후에 나온다. 남성 내레이션과 여성의 발화 사이에 약 `0.5 s`를 두고, 발화 뒤 약 `0.4 s`에 파도로 넘어간다. 세로 화면은 마지막 컷에서만 위아래로 열린다. 모두 본편 기준.
 - 수니온과 앞 장면은 기존 본편 소재를 재사용했고, 말하는 얼굴과 음성은 새 테이크다. **입 모양과 발화의 동기화 결과**와 **기존 소재 재사용 조건**을 구분한다.
 - 이번 얼굴과 여성 음성 출처는 Gemini Omni Flash다. R6에서 사용한 Veo, Wav2Lip GAN, OmniVoice는 이 편집본의 얼굴 컷에는 들어가지 않는다. [스토리보드 24쪽](ΕΠΟΣ_스토리보드.pdf#page=24).
+
+<a name="bonus-03-aspect-ratio"></a>
+
+### BONUS 03 | 16:9와 9:16 비교
+
+**세로본** (9:16, 광고 본편 10초)
+
+https://github.com/user-attachments/assets/3b82ae0d-891b-4b4f-9d64-9177f7fbacf1
+
+[세로본 MP4 열기](bonus/ΕΠΟΣ_세로.mp4) | [가로·세로 구도 비교](#가로-본편과-세로본-대조) | [스토리보드 22쪽](ΕΠΟΣ_스토리보드.pdf#page=22)
 
 ## 파일 검증
 
