@@ -411,6 +411,7 @@ Apps Script에서 Gemini Omni Flash에 8초 영상을 한 번 요청했다. 접�
 
 | 단계 | 결과 |
 |---|---|
+| API 입력 | 텍스트 프롬프트 |
 | 요청 | `HTTP 202`, 작업 번호 `vjob_3…8343` |
 | 완료 | 같은 작업 `HTTP 200`, `completed` |
 | 다운로드 | [8초 MP4](bonus/04-apps-script/EPOS_BONUS-04_OMNI_8S.mp4), 1280×720, 192 frames, AAC 스테레오 |
