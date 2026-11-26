@@ -416,6 +416,10 @@ Apps Script에서 Gemini Omni Flash에 8초 영상을 한 번 요청했다. 접�
 | 다운로드 | [8초 MP4](bonus/04-apps-script/EPOS_BONUS-04_OMNI_8S.mp4), 1280×720, 192 frames, AAC 스테레오 |
 | 실제 차감 | 네이토 사용량 기준 요청 1회, 192,000토큰 |
 
+**Figure 2.** From prompt to MP4 with the Naito Video API
+
+![Apps Script가 네이토에 영상 생성을 요청하고 같은 작업 번호로 상태를 확인한 뒤 완성 MP4를 다운로드하는 흐름](bonus/04-apps-script/video-api-sequence.png)
+
 [참고 스틸](bonus/04-apps-script/reference.png) | [프롬프트](bonus/04-apps-script/prompt.txt) | [Apps Script](bonus/04-apps-script/EPOS_Bonus04_8s.gs) | [실행 기록](bonus/04-apps-script/run-record.md) | [스토리보드 25쪽](ΕΠΟΣ_스토리보드.pdf#page=25)
 
 ## 파일 검증
