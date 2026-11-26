@@ -174,9 +174,9 @@ https://github.com/user-attachments/assets/c93a3d3e-e6a2-47e5-8350-70b4d71e8751
 | 담당 도구 | 맡은 작업 |
 |---|---|
 | ChatGPT | **카피와 구성**<br>여행 카피, 컷별 목표와 편집안을 작성했다. |
-| Google Gemini | **영상**<br>Cut 01의 샌들 장면, 세 유적, 수니온 해안의 영상 원본을 만들었다. |
-| ChatGPT Images (ImageGen) | **청동상 원화**<br>창을 쥔 손과 투구 아래 눈이 한 장에 들어오도록 가상의 청동상 원화를 생성했다. |
-| RealVisXL V5.0 Lightning | **로고 질감**<br>올리브 원화를 생성했다. ΕΠΟΣ 글자에는 이 원화의 명암만 사용했다. |
+| Google Gemini Apps (Google AI Plus) | **본편 영상**<br>Cut 01의 샌들 장면, 세 유적, 수니온 해안의 영상 원본을 만들었다. |
+| ChatGPT Images (ImageGen) | **이미지: 청동상 원화**<br>창을 쥔 손과 투구 아래 눈이 한 장에 들어오도록 가상의 청동상 원화를 생성했다. |
+| RealVisXL V5.0 Lightning | **이미지: 올리브 원화**<br>올리브 원화를 생성했다. ΕΠΟΣ 글자에는 이 원화의 명암만 사용했다. |
 | Pocket TTS Greek | **그리스어 내레이션**<br>여행 문구와 마지막 “에포스”를 남성 목소리로 합성했다. |
 | Suno v6-MINI | **음악**<br>기악곡 [〈Setting Sail for the Aegean〉](https://suno.com/song/b747b25e-a6ed-4079-8fe5-d7077d78685e)을 사용했다. |
 | Codex<br>Python, NumPy, SciPy | **효과음**<br>감쇠 파형과 필터 노이즈에 지연과 컨볼루션 잔향을 더해 북소리를 만들었다. 파도는 Gemini 영상에 담긴 소리와 합성음을 섞었다. |
@@ -188,6 +188,13 @@ https://github.com/user-attachments/assets/c93a3d3e-e6a2-47e5-8350-70b4d71e8751
 |---|---|
 | 광고 본편 | GFS Didot, Noto Serif CJK KR, Noto Sans CJK KR |
 | 슬레이트와 크레딧 | Nimbus Sans Narrow, JetBrains Mono, OpenAI Sans |
+
+**보너스 생성 모델**
+
+| 담당 도구 | 맡은 작업 |
+|---|---|
+| Google Gemini Omni Flash (네이토) | **BONUS 01: 얼굴 컷과 그리스어 발화**<br>같은 테이크의 화면과 원음을 사용했다. |
+| `gemini-omni-1.2-flash` (네이토의 Google Gemini Omni Flash) | **BONUS 04: Apps Script에서 8초 영상 생성**<br>API 요청의 모델 ID를 실행 기록에 남겼다. |
 
 **출처와 이용 범위**
 
@@ -356,7 +363,9 @@ https://github.com/user-attachments/assets/c93a3d3e-e6a2-47e5-8350-70b4d71e8751
 
 <a id="bonus-01-lip-sync"></a>
 
-### BONUS 01 | 생성 원음으로 맞춘 얼굴 컷
+### BONUS 01
+
+**생성 원음으로 맞춘 얼굴 컷**
 
 **가로본** (16:9, 10초)
 
@@ -389,31 +398,37 @@ https://github.com/user-attachments/assets/e65ae606-b35f-4a4b-a032-58e7fe743b2c
 
 - 청동상 `00:04.250–00:05.667` (34 frames), 얼굴 `00:05.667–00:07.625`, 수니온 파도 `00:07.625–00:10.000`, 제목 `00:08.125–00:10.000`. 여자 얼굴은 자막 직후에 나온다. 남성 내레이션과 여성의 발화 사이에 약 `0.5 s`를 두고, 발화 뒤 약 `0.4 s`에 파도로 넘어간다. 세로 화면은 마지막 컷에서만 위아래로 열린다. 모두 본편 기준.
 - 수니온과 앞 장면은 기존 본편 소재를 재사용했고, 말하는 얼굴과 음성은 새 테이크다. **입 모양과 발화의 동기화 결과**와 **기존 소재 재사용 조건**을 구분한다.
-- 이번 얼굴과 여성 음성 출처는 Gemini Omni Flash다. R6에서 사용한 Veo, Wav2Lip GAN, OmniVoice는 이 편집본의 얼굴 컷에는 들어가지 않는다. [스토리보드 24쪽](ΕΠΟΣ_스토리보드.pdf#page=24).
+- 이번 얼굴과 여성 음성 출처는 Gemini Omni Flash다. R6에서 사용한 Veo, Wav2Lip GAN, OmniVoice는 이 편집본의 얼굴 컷에는 들어가지 않는다. [스토리보드 22쪽](ΕΠΟΣ_스토리보드.pdf#page=22).
 
 <a name="bonus-03-aspect-ratio"></a>
 
-### BONUS 03 | 16:9와 9:16 비교
+### BONUS 03
+
+**가로본과 세로본 비교**
 
 **세로본** (9:16, 광고 본편 10초)
 
 https://github.com/user-attachments/assets/3b82ae0d-891b-4b4f-9d64-9177f7fbacf1
 
-[세로본 MP4 열기](bonus/ΕΠΟΣ_세로.mp4) | [가로·세로 구도 비교](#가로-본편과-세로본-대조) | [스토리보드 22쪽](ΕΠΟΣ_스토리보드.pdf#page=22)
+[세로본 MP4 열기](bonus/ΕΠΟΣ_세로.mp4) | [가로·세로 구도 비교](#가로-본편과-세로본-대조) | [스토리보드 23쪽](ΕΠΟΣ_스토리보드.pdf#page=23)
 
 <a id="bonus-04-apps-script"></a>
 
-### BONUS 04 | Apps Script 영상 생성
+### BONUS 04
+
+**Apps Script 영상 생성**
 
 새 얼굴 스틸에서 회청색 눈, 금빛 귀걸이, 늦은 오후 빛의 방향을 골랐다. Astra 6.2 Max로 이 특징을 프롬프트에 정리하고, 네이토에는 사진 대신 텍스트를 보냈다.
 
-Apps Script에서 Gemini Omni Flash에 8초 영상을 한 번 요청했다. 접수 응답에서 받은 작업 번호로 완료 상태를 조회한 뒤, 같은 작업의 MP4를 내려받았다. 이 영상은 API 호출 과정을 보여 주는 별도 결과물이다. 본편과 BONUS 01은 기존 편집을 유지했다.
+Apps Script에서 Gemini Omni Flash 8초 영상 생성을 1회 요청했다.
+
+Response에서 받은 `job ID`로 완료 상태를 조회한 뒤, 해당 작업 결과물 MP4를 다운로드했다. 이 영상은 API 호출 과정을 보여 주는 별도 결과물이다. 본편과 BONUS 01은 기존 편집을 유지했다.
 
 | 단계 | 결과 |
 |---|---|
 | API 입력 | 텍스트 프롬프트 |
 | 요청 | `HTTP 202`, 작업 번호 `vjob_3…8343` |
-| 완료 | 같은 작업 `HTTP 200`, `completed` |
+| 상태 조회 응답 | `HTTP 200 OK`, `completed` |
 | 다운로드 | [8초 MP4](bonus/04-apps-script/EPOS_BONUS-04_OMNI_8S.mp4), 1280×720, 192 frames, AAC 스테레오 |
 | 실제 차감 | 네이토 사용량 기준 요청 1회, 192,000토큰 |
 
@@ -421,14 +436,52 @@ Apps Script에서 Gemini Omni Flash에 8초 영상을 한 번 요청했다. 접�
 
 <p align="center"><img src="bonus/04-apps-script/video-api-sequence.png" alt="Apps Script가 네이토에 영상 생성을 요청하고 같은 작업 번호로 상태를 확인한 뒤 완성 MP4를 다운로드하는 흐름" width="480"></p>
 
-[참고 스틸](bonus/04-apps-script/reference.png) | [프롬프트](bonus/04-apps-script/prompt.txt) | [Apps Script](bonus/04-apps-script/EPOS_Bonus04_8s.gs) | [실행 기록](bonus/04-apps-script/run-record.md) | [스토리보드 25쪽](ΕΠΟΣ_스토리보드.pdf#page=25)
+[참고 스틸](bonus/04-apps-script/reference.png) | [프롬프트](bonus/04-apps-script/prompt.txt) | [Apps Script](bonus/04-apps-script/EPOS_Bonus04_8s.gs) | [실행 기록](bonus/04-apps-script/run-record.md) | [스토리보드 24쪽](ΕΠΟΣ_스토리보드.pdf#page=24)
 
-## 파일 검증
+<a id="파일-검증"></a>
 
-**생성 결과 파일명:** 생성 소재는 장면과 버전을 구분할 수 있게 이름을 붙였다. `EPOS-v09-Gemini-opening-v2-original.mp4`에는 프로젝트, 작업 버전, 도구, 장면, 테이크, 원본 여부를 남겼다. 장소가 먼저 나오는 수니온 원본 `EPOS_Sounion_Gemini_original.mp4`와 테이크 번호 및 발화명을 넣은 음성 `G05_한호흡.wav`도 실제 이름 그대로 표기했다. [스토리보드 23쪽](ΕΠΟΣ_스토리보드.pdf#page=23) 참조.
+## Appendix: 파일 대조
 
-| File | SHA-256 |
+[스토리보드 25쪽](ΕΠΟΣ_스토리보드.pdf#page=25)
+
+### 생성 결과 파일명
+
+생성 소재는 파일명으로 장면과 버전을 구분했다.
+
+- `EPOS-v09-Gemini-opening-v2-original.mp4`: 프로젝트, 버전, 도구, 장면, 테이크, 원본 여부
+- `EPOS_Sounion_Gemini_original.mp4`: 장소를 먼저 표기
+- `G05_한호흡.wav`: 테이크 번호와 발화명
+
+### 제출 파일 SHA-256
+
+저장소에 올린 영상과 BONUS 04 실행 자료의 SHA-256이다.
+
+**기존 본편과 BONUS 03**
+
+| 파일 | SHA-256 |
 |---|---|
-| ΕΠΟΣ_광고.mp4 | `437e0e20fa312670d1ab505a0696e12280404b72326df8f503d753c3ef6c5b14` |
-| bonus/ΕΠΟΣ_세로.mp4 | `65fbad57ad9ef6827456e508446ec865765694524b1a418b8a4e7502b2739324` |
-| assets/EPOS_PICTURELOCK_SCREENING_CREDITS.mp4 | `0cf7e63cafd1fc8af4b11ae0b50635f6bb6b31b150d21177cbd730297720baef` |
+| [ΕΠΟΣ_광고.mp4](%CE%95%CE%A0%CE%9F%CE%A3_%EA%B4%91%EA%B3%A0.mp4) | `437e0e20fa312670d1ab505a0696e12280404b72326df8f503d753c3ef6c5b14` |
+| [bonus/ΕΠΟΣ_세로.mp4](bonus/%CE%95%CE%A0%CE%9F%CE%A3_%EC%84%B8%EB%A1%9C.mp4) | `65fbad57ad9ef6827456e508446ec865765694524b1a418b8a4e7502b2739324` |
+| [assets/EPOS_PICTURELOCK_SCREENING_CREDITS.mp4](assets/EPOS_PICTURELOCK_SCREENING_CREDITS.mp4) | `0cf7e63cafd1fc8af4b11ae0b50635f6bb6b31b150d21177cbd730297720baef` |
+
+**BONUS 01 | 립싱크**
+
+| 파일 | SHA-256 |
+|---|---|
+| [bonus/01-lip-sync/EPOS_WIDE_BONUS-01_LIPSYNC.mp4](bonus/01-lip-sync/EPOS_WIDE_BONUS-01_LIPSYNC.mp4) | `c95f1dcdf6afb3b3309135aef531c6b1d777816a4adb62093192a6901e0d5033` |
+| [bonus/01-lip-sync/EPOS_VERTICAL_BONUS-01_LIPSYNC.mp4](bonus/01-lip-sync/EPOS_VERTICAL_BONUS-01_LIPSYNC.mp4) | `25051983470d0ab00e0581272c32c9caa1231547c06c10c7112fca16e1eeecc1` |
+| [bonus/01-lip-sync/EPOS_SCREENING_CREDITS_BONUS-01_LIPSYNC.mp4](bonus/01-lip-sync/EPOS_SCREENING_CREDITS_BONUS-01_LIPSYNC.mp4) | `e1880f54f32e5b931936f6db930cdf80017454d564ef820a1b972f3b033c9ab4` |
+
+**BONUS 04 | Apps Script**
+
+| 파일 | SHA-256 |
+|---|---|
+| [bonus/04-apps-script/EPOS_BONUS-04_OMNI_8S.mp4](bonus/04-apps-script/EPOS_BONUS-04_OMNI_8S.mp4) | `93f7a663859340f4e56270142e886b8cf9339dc184016e1307067c58d4c7f581` |
+| [bonus/04-apps-script/reference.png](bonus/04-apps-script/reference.png) | `d9071fd9e5607702b806980213af25342290a838e8dbc33d41843913e8730b3e` |
+| [bonus/04-apps-script/prompt.txt](bonus/04-apps-script/prompt.txt) | `e42572dca0494185e520e4be4a74f373a5d9002e1a42b8f87cd84d6c9f417e86` |
+| [bonus/04-apps-script/EPOS_Bonus04_8s.gs](bonus/04-apps-script/EPOS_Bonus04_8s.gs) | `094934415ccee4ad679580b17f01795aa2afaf29c02dc68ce75d61d71743b415` |
+| [bonus/04-apps-script/run-record.md](bonus/04-apps-script/run-record.md) | `575fb8a3c3f0cc6749f09407a0dbf22b422e9a895813d1dcb6eda83af837c75e` |
+
+**공통 AAC 스트림:** `7bdb59e03eddee288327fa3558a5833e5a071b15f0a89c2c51938fff180c5efa`
+
+가로 본편과 BONUS 03 세로본은 같은 AAC 스트림을 사용했다. 해시는 AAC 패킷 데이터 기준이다.
