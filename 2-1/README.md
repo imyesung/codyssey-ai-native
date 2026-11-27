@@ -69,6 +69,7 @@ https://github.com/user-attachments/assets/c93a3d3e-e6a2-47e5-8350-70b4d71e8751
 - 청동상은 원화 한 장을 썼다. 화면에 그린 화살표를 따라 가상 카메라가 창을 쥔 손에서 눈으로 천천히 올라가도록 편집했다.
 - 발, 사자 부조, 신전과 포말이 세로 화면 안에 남도록 컷별 프레이밍을 조정했다.
 - 가로와 세로에서 같은 시점인 `00:06.958`에 로고를 얹고, 올리브 원화의 명암을 로고 질감에 사용했다.
+  - 원화의 색은 옮기지 않고, 밝고 어두운 무늬만 아이보리색 글자 획 안에 옅게 남겼다.
 
 ### 04 사운드
 
@@ -418,23 +419,23 @@ https://github.com/user-attachments/assets/3b82ae0d-891b-4b4f-9d64-9177f7fbacf1
 
 **Apps Script 영상 생성**
 
-새 얼굴 스틸에서 회청색 눈, 금빛 귀걸이, 늦은 오후 빛의 방향을 골랐다. Astra 6.2 Max로 이 특징을 프롬프트에 정리하고, 네이토에는 사진 대신 텍스트를 보냈다.
+새 얼굴 스틸에서 회청색 눈, 금빛 귀걸이, 늦은 오후 빛의 방향을 골랐다. Astra 6.2 Max로 이 특징을 프롬프트에 정리하고, Naito에는 레퍼런스 이미지 대신 텍스트 프롬프트를 보냈다.
 
-Apps Script에서 Gemini Omni Flash 8초 영상 생성을 1회 요청했다.
+Apps Script에서 Google Gemini Omni Flash(`gemini-omni-1.2-flash`)로 8초 영상 한 편을 요청했다. 상태 조회는 자동으로 반복하지 않고 편집기에서 두 번 따로 실행했다. 실행 기록을 보면 접수 응답을 받은 지 39.9초 뒤에는 아직 처리 중이었고, 그로부터 65.7초 뒤에 다시 조회했을 때는 작업이 끝나 있었다.
 
-Response에서 받은 `job ID`로 완료 상태를 조회한 뒤, 해당 작업 결과물 MP4를 다운로드했다. 이 영상은 API 호출 과정을 보여 주는 별도 결과물이다. 본편과 BONUS 01은 기존 편집을 유지했다.
+이 영상은 API 호출 과정을 보여 주는 별도 결과물이다. 본편과 BONUS 01은 기존 편집을 유지했다.
 
 | 단계 | 결과 |
 |---|---|
 | API 입력 | 텍스트 프롬프트 |
-| 요청 | `HTTP 202`, 작업 번호 `vjob_3…8343` |
+| 요청 | `HTTP 202`, job ID `vjob_3…8343` |
 | 상태 조회 응답 | `HTTP 200 OK`, `completed` |
-| 다운로드 | [8초 MP4](bonus/04-apps-script/EPOS_BONUS-04_OMNI_8S.mp4), 1280×720, 192 frames, AAC 스테레오 |
+| 다운로드 | [8초 MP4](bonus/04-apps-script/EPOS_BONUS-04_OMNI_8S.mp4), 1280×720, 192 frames, AAC Stereo |
 | 실제 차감 | 네이토 사용량 기준 요청 1회, 192,000토큰 |
 
 <p align="center"><strong>Figure 2.</strong> From prompt to MP4 with the Naito Video API</p>
 
-<p align="center"><img src="bonus/04-apps-script/video-api-sequence.png" alt="Apps Script가 네이토에 영상 생성을 요청하고 같은 작업 번호로 상태를 확인한 뒤 완성 MP4를 다운로드하는 흐름" width="480"></p>
+<p align="center"><img src="bonus/04-apps-script/naito-video-to-drive.png" alt="Apps Script가 네이토에 영상 생성을 요청하고 같은 작업 번호로 상태를 확인한 뒤 완성 MP4를 다운로드하는 흐름" width="480"></p>
 
 [참고 스틸](bonus/04-apps-script/reference.png) | [프롬프트](bonus/04-apps-script/prompt.txt) | [Apps Script](bonus/04-apps-script/EPOS_Bonus04_8s.gs) | [실행 기록](bonus/04-apps-script/run-record.md) | [스토리보드 24쪽](ΕΠΟΣ_스토리보드.pdf#page=24)
 
@@ -446,7 +447,7 @@ Response에서 받은 `job ID`로 완료 상태를 조회한 뒤, 해당 작업 
 
 ### 생성 결과 파일명
 
-생성 소재는 파일명으로 장면과 버전을 구분했다.
+생성 자료들은 파일명으로 장면과 버전을 구분했다.
 
 - `EPOS-v09-Gemini-opening-v2-original.mp4`: 프로젝트, 버전, 도구, 장면, 테이크, 원본 여부
 - `EPOS_Sounion_Gemini_original.mp4`: 장소를 먼저 표기
@@ -454,7 +455,7 @@ Response에서 받은 `job ID`로 완료 상태를 조회한 뒤, 해당 작업 
 
 ### 제출 파일 SHA-256
 
-저장소에 올린 영상과 BONUS 04 실행 자료의 SHA-256이다.
+레포지토리에 업로드한 영상 및 BONUS 04 실행 자료의 SHA-256이다.
 
 **기존 본편과 BONUS 03**
 
@@ -464,7 +465,7 @@ Response에서 받은 `job ID`로 완료 상태를 조회한 뒤, 해당 작업 
 | [bonus/ΕΠΟΣ_세로.mp4](bonus/%CE%95%CE%A0%CE%9F%CE%A3_%EC%84%B8%EB%A1%9C.mp4) | `65fbad57ad9ef6827456e508446ec865765694524b1a418b8a4e7502b2739324` |
 | [assets/EPOS_PICTURELOCK_SCREENING_CREDITS.mp4](assets/EPOS_PICTURELOCK_SCREENING_CREDITS.mp4) | `0cf7e63cafd1fc8af4b11ae0b50635f6bb6b31b150d21177cbd730297720baef` |
 
-**BONUS 01 | 립싱크**
+**BONUS 01. 립싱크**
 
 | 파일 | SHA-256 |
 |---|---|
@@ -472,7 +473,7 @@ Response에서 받은 `job ID`로 완료 상태를 조회한 뒤, 해당 작업 
 | [bonus/01-lip-sync/EPOS_VERTICAL_BONUS-01_LIPSYNC.mp4](bonus/01-lip-sync/EPOS_VERTICAL_BONUS-01_LIPSYNC.mp4) | `25051983470d0ab00e0581272c32c9caa1231547c06c10c7112fca16e1eeecc1` |
 | [bonus/01-lip-sync/EPOS_SCREENING_CREDITS_BONUS-01_LIPSYNC.mp4](bonus/01-lip-sync/EPOS_SCREENING_CREDITS_BONUS-01_LIPSYNC.mp4) | `e1880f54f32e5b931936f6db930cdf80017454d564ef820a1b972f3b033c9ab4` |
 
-**BONUS 04 | Apps Script**
+**BONUS 04. Apps Script**
 
 | 파일 | SHA-256 |
 |---|---|
